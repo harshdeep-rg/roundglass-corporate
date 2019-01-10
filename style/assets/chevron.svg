@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>scroll-arrow-to-left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Corporate-Web_1920-Copy-5" transform="translate(-1548.000000, -938.000000)" fill="#FFFFFF">
+            <g id="scroll-arrow-to-left" transform="translate(1551.500000, 944.000000) rotate(180.000000) translate(-1551.500000, -944.000000) translate(1548.500000, 938.500000)">
+                <path d="M5.86911439,10.2445604 C6.04362854,10.4174881 6.04362854,10.6974724 5.86911439,10.8704001 C5.69486109,11.043072 5.41182992,11.0433278 5.23731577,10.8704001 L0.130885614,5.81303178 C-0.0436285379,5.64010406 -0.0436285379,5.35986395 0.130885614,5.18693623 L5.23718534,0.129695789 C5.41169949,-0.0432319297 5.69446981,-0.0432319297 5.86898396,0.129695789 C6.04349811,0.302623508 6.04349811,0.582735715 5.86937524,0.755535529 L1.21227338,5.50004796 L5.86911439,10.2445604 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

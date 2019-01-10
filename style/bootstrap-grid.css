@@ -507,7 +507,7 @@ html {
   /*end here*/
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .container {
     max-width: 720px;
   }
@@ -2563,7 +2563,7 @@ html {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .d-md-none {
     display: none !important;
   }
@@ -2997,7 +2997,7 @@ html {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .flex-md-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;

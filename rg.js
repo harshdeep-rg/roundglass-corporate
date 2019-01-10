@@ -38,7 +38,7 @@ $(".website-content").ready(
             //make website content appear
             setTimeout(function(){
               $(".website-content").css('display', 'block');
-            }, 5400/* should be 5400 */);
+            }, 0/* should be 5400 */);
 
             setTimeout(function(){
                 $('.slider').slick({
@@ -77,7 +77,7 @@ $(".website-content").ready(
                    
                 });
         
-              }, 5400/* should be 5400 */);
+              }, 0/* should be 5400 */);
 
               setTimeout(function(){
                 new WOW().init();
@@ -85,7 +85,7 @@ $(".website-content").ready(
                    
                
         
-              }, 5400/* should be 5400 */);
+              }, 0/* should be 5400 */);
             //NOTE :change these numbers if the loading(document.ready is already taking more time)      
     }
 );

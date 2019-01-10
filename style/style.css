@@ -62,7 +62,7 @@ h2 {
   margin-bottom: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
   h2 {
     width: 90%;
   }
@@ -359,7 +359,7 @@ h5 {
     line-height: 1.5rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   h1, .h1-inverted {
     font-size: 2rem;
     line-height: 2.25rem;
@@ -1353,6 +1353,10 @@ img {
   width:80%;
 }
 
+.live{
+  position: relative;
+}
+
 .DOD-video{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111044/v-1.png);
 }
@@ -1390,24 +1394,6 @@ img {
   overflow: hidden;
 }
 
-@media (max-width: 600px) {
-  .illustrations, .pillars, .white-card {
-    display: none !important;
-  }
-
-  .illustration-small-screen {
-    display: block !important;
-  }
-}
-@media (min-width: 601px) {
-  .illustrations, .pillars, .white-card {
-    display: block !important;
-  }
-
-  .illustration-small-screen {
-    display: none !important;
-  }
-}
 .illustration-image {
   width: 33.33%;
   height: auto;
@@ -1416,19 +1402,56 @@ img {
   float: left;
 }
 
+@media (max-width: 769px) {
+  .illustrations, .white-card, .pillars{
+    display: none !important;
+  }
+
+  .illustration-small-screen, .live-give-sustain-small-screen, .pillars-small-text {
+    display: block !important;
+  }
+}
+@media (min-width: 770px) {
+  .illustrations, .white-card, .pillars{
+    display: block !important;
+  }
+
+  .illustration-small-screen, .live-give-sustain-small-screen, .pillars-small-text {
+    display: none !important;
+  }
+}
+
 .illustration-small-container * {
-  display: inline-block;
+  display: flex;
 }
 
 .illustration-small-screen {
-  height: 100px;
+  
   z-index: 200;
   display: none;
+  position: relative;
+}
+
+.illustration-small-container{
+  position: relative;
 }
 
 .illustration-small-screen img {
-  widows: 100%;
+  width: 100%;
   height: auto;
+  
+}
+
+.illustration-small{
+  display: inline-block;
+  width: 42%;
+  margin-right: 24px;
+  margin-top: 32px;
+}
+
+.illustration-small .body-text-0{
+  margin-top: 16px;
+  margin-bottom: 0px;
 }
 
 .pillars {
@@ -1448,7 +1471,36 @@ img {
   padding-bottom: 44px;
 }
 
-#pillars {
+.pillars-text-small{
+  margin-top: 48px;
+}
+
+.pillars-text-small h4{
+  margin-top: 0px;
+}
+
+
+.three-pillars h4{
+  margin-top: 0px;
+}
+
+@media (max-width:600px){
+  .three-pillars {
+    padding-bottom: 0px;
+    text-align: left;
+    width: 80%;
+  }
+
+  .three-pillars h4{
+    margin-top: 48px;
+  }
+}
+
+.pillars-text-small{
+  width: 100%;
+}
+
+#pillars-container {
   position: relative;
   top: -48px;
 }
@@ -1456,6 +1508,60 @@ img {
 .white-card {
   background-color: white;
 }
+
+.live-give-sustain-small-screen{
+  width: 100%;
+}
+
+.pillars-line-small-screen{
+ margin-top: 24px;
+ margin-bottom: 0px;
+}
+
+.pillars-line-small-screen:last-child{
+  margin-bottom: 32px;
+}
+
+.pillar-small .phrase-1{
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+.pillar-text-link{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  float: left;
+}
+
+.pillar-text-link .phrase-1:after{
+  content: none;
+}
+
+.phrase-small-text{
+  font-family: Gibson;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+  color: #777777;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.pillar-small{
+  display: flex;
+  flex-direction: row;
+}
+
+.link-icon{
+  content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1547154381/red-chevron.svg);
+  margin:0px 0px 0px auto;
+  padding-top: 24px;
+}
+
 
 .line-upper, .line-lower {
   width: 100%;
@@ -1906,9 +2012,9 @@ hr {
 }
 
 .phrase-1::after {
-  content: url("assets/red-chevron.svg");
+  content: url("https://res.cloudinary.com/dvq2wjj33/image/upload/v1547154381/red-chevron.svg");
   padding-left: 4px;
-}
+}.
 
 .large-screen a {
   color: white;

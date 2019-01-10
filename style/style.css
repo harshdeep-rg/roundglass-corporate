@@ -1448,6 +1448,17 @@ img {
   margin-right: 24px;
   margin-top: 32px;
 }
+.ill-1{
+  content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1547144964/Mobile_i-1.svg);
+}
+
+.ill-2{
+  content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1547144964/Mobile_i-2.svg);
+}
+
+.ill-3{
+  content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1547144964/Mobile_i-3.svg);
+}
 
 .illustration-small .body-text-0{
   margin-top: 16px;

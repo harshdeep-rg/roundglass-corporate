@@ -689,6 +689,7 @@ a.animated-button.thar-three {
   background-color: rgba(255, 255, 255, 0.16);
   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
   float: left;
+  text-decoration: none;
 }
 
 a.animated-button.thar-three:hover {
@@ -1895,7 +1896,9 @@ hr {
 .footer-list {
   display: flex;
   list-style: none;
-  justify-content: flex-end;
+  margin-right: 0px 0px 0px auto !important;
+  margin-left: auto;
+  
 }
 
 .footer-list li a {
@@ -1909,7 +1912,6 @@ hr {
   position: relative;
   color: #777777;
   transition: 0.5s;
-  top: 36px;
   position: relative;
 }
 
@@ -1925,15 +1927,6 @@ hr {
   text-decoration: none !important;
 }
 
-@media (max-width: 1200px) {
-  .footer-list li a {
-    padding-left: 36px;
-  }
-
-  .footer {
-    display: none;
-  }
-}
 .rg-logo {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -1951,9 +1944,8 @@ hr {
 
 .rg-logo2 {
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/logo-dark.svg);
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: 0.5s;
+  display:flex;
 }
 
 .facebook-icon{
@@ -1977,15 +1969,15 @@ hr {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-left: 96px;
+  margin-right: 64px;
 }
 
 .social-icons img {
   padding-right: 32px;
   cursor: pointer;
   vertical-align: middle;
-  max-width: 50%;
   text-align: center;
-  height: 96px;
   transition: 0.5s ease;
 }
 
@@ -1996,6 +1988,78 @@ hr {
   -webkit-transform: translate(0px, -3px);
   transform: translate(0px, -3px);
 }
+
+@media (max-width:1440px){
+  .social-icons{
+    margin-right: 0px;
+  }
+}
+
+@media (max-width:1280px){
+  .hide-footer-item{
+    display: none !important;
+  }
+}
+
+@media (max-width:1024px){
+  .footer-list{
+    padding-left: 24px;
+  }
+
+  .social-icons{
+    margin-right: 24px;
+    margin-left: 64px;
+  }
+
+  .footer-list li a {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width:900px){
+  .footer-list{
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-top: 32px;
+    position: relative;
+    left: -6px;
+    display: table;
+  }
+
+  .footer-list li a{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+
+  .social-icons{
+    width: 100%;
+    padding-top:32px; 
+    margin: 0 auto;
+  }
+
+.rg-logo2{
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: -15px;
+  
+  }
+
+  .footer{
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .social-icons img{
+    padding-right: 22px;
+  }
+}
+
+
+
 
 .experiences {
   left: 0px;

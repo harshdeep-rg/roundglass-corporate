@@ -574,8 +574,6 @@ body {
     display: block;
   }
 
-  
-
   .small-screen {
     display: none;
   }
@@ -585,7 +583,6 @@ body {
     display: block;
   }
 
- 
   .small-screen {
     display: none;
   }
@@ -737,23 +734,20 @@ input:active {
 @keyframes zoom-large-screen {
   from {
     transform: scale(1.15, 1.15);
-    background-position: center 12px;
   }
   to {
     transform: scale(1, 1);
-    background-position: center 0px;
   }
 }
 .cover-image {
   width: 100vw;
   height: 100vh !important;
-  background-position: center 0px !important;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   border: none;
   padding: 0;
-  margin-bottom: -12px !important;
 }
 
 img {
@@ -1671,15 +1665,6 @@ hr {
 .applications-snippet p {
   width: 90%;
 }
-@media(max-width:1024px){
-  .applications-snippet p {
-    width: 100%;
-  }
-
-  .applications-snippet .body-text-1{
-    margin-top: 8px;
-  }
-}
 
 .applications-hr {
   margin-left: 0;
@@ -2071,7 +2056,6 @@ hr {
     width: 100%;
     padding-top:32px; 
     margin: 0 auto;
-
   }
 
 .rg-logo2{
@@ -2079,7 +2063,6 @@ hr {
   margin: 0 auto;
   position: relative;
   left: -15px;
-  height: 24px;
   
   }
 
@@ -2451,6 +2434,11 @@ hr {
   }
 }
 
+@media (max-width: 600px) {
+  .play-icon {
+    
+  }
+}
 .fullopacity {
   opacity: 1;
 }

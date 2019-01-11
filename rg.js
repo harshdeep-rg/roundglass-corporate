@@ -302,7 +302,7 @@ $(window).scroll(function () {
             $(".navbar a").css("color", "#2d2d2d");
             $(".dropbtn").css("color", "#2d2d2d");
             $(".dropdown-content a").css("color", "#2d2d2d");
-            $(".roundglass-logo").attr("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/logo-dark.svg)");
+            $(".roundglass-logo").css("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/logo-dark.svg)");
            
         } 
 
@@ -315,7 +315,7 @@ $(window).scroll(function () {
             $(".navbar a").css("color", "white");
             $(".dropbtn").css("color", "white");
             $(".dropdown-content a").css("color", "#2d2d2d");
-            $(".roundglass-logo").attr("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)");
+            $(".roundglass-logo").css("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)");
            
         } 
 
@@ -328,7 +328,7 @@ $(window).scroll(function () {
             $(".navbar a").css("color", "white");
             $(".dropbtn").css("color", "white");
             $(".dropdown-content a").css("color", "#2d2d2d");
-            $(".roundglass-logo").attr("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)");
+            $(".roundglass-logo").css("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)");
         }
     });
 

@@ -1245,28 +1245,40 @@ img {
   }
 }
 .link-button {
-  font-family: canada-type-gibson, sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: 1.4px;
-  color: #ffffff;
   position: relative;
+  margin-left: auto;
+  height: 44px;
 }
 
-@media (max-height: 600px) {
-  .link-button {
-    top: -1px;
+@media (max-width: 1024px) {
+  a.animated-button.thar-three {
+    margin-top: 24px;
   }
 }
-@media (max-width: 600px) {
-  .small-screen button {
+
+@media (max-width: 768px) {
+  .small-screen a{
     padding: 0;
     background: none;
     border: none;
     text-align: left;
+  }
+
+  a.animated-button.thar-three {
+    padding: 0;
+    background: none;
+    border: none;
+    text-align: left;
+    margin-right: auto;
+    margin-left:0;
+    margin-top: 24px;
+    font-family: Gibson;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 1.4px; 
   }
 
   .link-button:after {
@@ -1344,6 +1356,12 @@ img {
 .our-purpose {
   background-color: #fafafa;
   padding-bottom: 64px;
+}
+
+@media (max-width:600px){
+  .our-purpose{
+    padding-bottom: 32px;
+  }
 }
 
 .purpose-3 {
@@ -2091,6 +2109,7 @@ hr {
   padding-left: 4px;
 }.
 
+
 .large-screen a {
   color: white;
   text-decoration: none;
@@ -2292,12 +2311,14 @@ hr {
   }
 }
 @media (max-width: 1280px) {
+
   .nav-content-right > a {
-    margin-left: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .dropdown {
-    padding-left: 16px;
+    padding-left: 0px;
   }
 
   .dropdown-content {
@@ -2308,6 +2329,11 @@ hr {
   .dropdown-content a {
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  .dropbtn{
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
 /* Video carousel */
@@ -2386,11 +2412,9 @@ hr {
   line-height: 1.43;
   letter-spacing: 1.6px;
   color: #777777;
+  margin-bottom: 0px;
 }
 
-.thumbnail:hover .play-icon {
-  transform: scale(2);
-}
 
 .play-icon {
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547118341/play.svg);
@@ -2404,9 +2428,15 @@ hr {
   z-index: 10000;
 }
 
+@media (max-width:2000px){
+  .play-icon {
+    transform: translate(-50%, -88%);
+  }
+}
+
 @media (max-width: 600px) {
   .play-icon {
-    transform: scale(0.8) translate(-50%, -140%);
+    
   }
 }
 .fullopacity {

@@ -2428,11 +2428,6 @@ hr {
   z-index: 10000;
 }
 
-@media (max-width:2000px){
-  .play-icon {
-    transform: translate(-50%, -88%);
-  }
-}
 
 @media (max-width: 600px) {
   .play-icon {

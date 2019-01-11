@@ -53,7 +53,7 @@ $(".website-content").ready(
                             breakpoint: 2000,
                               settings: {
                                         slidesToShow: 4,
-                                        slidesToScroll: 1,
+                                        slidesToScroll: 1
                                         }
                         },
                         {
@@ -69,12 +69,27 @@ $(".website-content").ready(
                             settings: {
                                         slidesToShow: 1,
                                         slidesToScroll: 1,
-                                        centerPadding: '14%',
+                                        centerPadding: '14%'
                                       }
                         }       
                     ]
         
                    
+                });
+
+                setTimeout(function(){
+                    $('.carousel').slick({
+                        speed: 600,
+                        slidesToShow: 1,
+                        centerPaddingLeft:'16.5%',
+                        centerMode: true,
+                        variableWidth: true,
+                        touchThreshold: 10,
+                        slidesToScroll: 1
+                           
+                    }); 
+            
+                       
                 });
         
               }, 0/* should be 5400 */);
@@ -131,7 +146,7 @@ $(".website-content").ready(
 
 
 
-    $('.cover-image').paroller();
+        $('.cover-image').paroller();
         $('.img-responsive').paroller(); 
         $('.img-responsive-2').paroller(); 
         $('.img-responsive-3').paroller();  
@@ -153,15 +168,7 @@ $(".website-content").ready(
         });
 
         $(document).ready(function(){
-            $('.carousel').slick({
-                speed: 600,
-                slidesToShow: 1,
-                centerPaddingLeft:'16.5%',
-                centerMode: true,
-                variableWidth: true,
-                touchThreshold: 10
-                   
-            });               
+                          
         });
         
         
@@ -294,6 +301,11 @@ $(".website-content").ready(
 $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
+        // fix for black strip on top due to parallax
+        if(scroll >12){
+            $(".cover-image").css("backgroundPosition", "centre 0px");
+        }
+
         if (scroll > 600) {
             $(".navbar").css("opacity", "1");
             $(".navbar").css("background", "white");
@@ -329,9 +341,9 @@ $(window).scroll(function () {
             $(".dropbtn").css("color", "white");
             $(".dropdown-content a").css("color", "#2d2d2d");
             $(".roundglass-logo").css("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)");
+            //$(".cover-image").css("background-position", "center 0px");
         }
     });
-
 
 
    

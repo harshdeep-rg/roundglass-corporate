@@ -744,7 +744,7 @@ input:active {
   position: absolute;
   border: none;
   padding: 0;
-  
+  content:url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
 }
 
 .zoom-animation{
@@ -1151,7 +1151,9 @@ input:active {
   width: 100vw;
   height: auto;
 }
-
+.img-responsive,.img-responsive-2, .img-responsive-3{
+  content:url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');
+}
 .img-responsive {
   background-image: url(assets/1.jpg);
   width: 100vw !important;

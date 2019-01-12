@@ -763,28 +763,24 @@ input:active {
 
 }
 
-#img-1 {
-  background-image: url(assets/1.jpg);
+#img-1,#img-2,#img-3{
   -webkit-transition: opacity 0.8s ease-in-out;
   -moz-transition: opacity 0.8s ease-in-out;
   -o-transition: opacity 0.8s ease-in-out;
   transition: opacity 0.8s ease-in-out;
+}
+
+#img-1 {
+  background-image: url(assets/1.jpg);
+
 }
 
 #img-2 {
   background-image: url(assets/2.jpg);
-  -webkit-transition: opacity 0.8s ease-in-out;
-  -moz-transition: opacity 0.8s ease-in-out;
-  -o-transition: opacity 0.8s ease-in-out;
-  transition: opacity 0.8s ease-in-out;
 }
 
 #img-3 {
   background-image: url(assets/3.jpg);
-  -webkit-transition: opacity 0.8s ease-in-out;
-  -moz-transition: opacity 0.8s ease-in-out;
-  -o-transition: opacity 0.8s ease-in-out;
-  transition: opacity 0.8s ease-in-out;
 }
 
 /* article controls css */

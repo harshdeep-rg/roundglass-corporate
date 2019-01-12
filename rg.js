@@ -41,6 +41,14 @@ $(".website-content").ready(
             }, 5400/* should be 5400 */);
 
             setTimeout(function(){
+                $(".cover-image").addClass("zoom-animation");
+              }, 5400);
+
+              setTimeout(function(){
+                $(".cover-image").removeClass("zoom-animation");
+              }, 7900);
+
+            setTimeout(function(){
                 $('.slider').slick({
                     infinite: true,
                     centerMode: true,

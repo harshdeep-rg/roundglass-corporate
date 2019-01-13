@@ -2,7 +2,7 @@
 
 
 
-$(".website-content").ready(
+$(".landing-section-rg").ready(
         function hideLoader(){
             //loader screen slideup animation and change display to none
             setTimeout(function(){

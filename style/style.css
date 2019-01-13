@@ -1332,10 +1332,7 @@ img {
 }
 
 @media (max-width: 600px) {
-  .img-responsive-1, .img-responsive-2, .img-responsive-3 {
-    height: 100vh;
-    min-height: 90%;
-  }
+
 
   .img-responsive {
     background-image: url(assets/image-1-small.jpg);
@@ -1365,14 +1362,6 @@ img {
 
 .item {
   position: relative;
-}
-
-.item img {
-  -webkit-transition: -webkit-transform 3s;
-  transition: -webkit-transform 3s;
-  -o-transition: transform 3s;
-  transition: transform 3s;
-  transition: transform 3s, -webkit-transform 3s;
 }
 
 .content-holder-small {

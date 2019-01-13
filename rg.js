@@ -135,10 +135,6 @@ $(".website-content").ready(
 
 
         $('.cover-image').paroller();
-        $('.img-responsive').paroller(); 
-        $('.img-responsive-2').paroller(); 
-        $('.img-responsive-3').paroller();  
-
 
         $('.ml3').each(function(){
             $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));

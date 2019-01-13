@@ -2345,6 +2345,7 @@ hr {
   overflow: visible;
   border: none;
   border-radius: 0;
+  font-size: 0px;
 }
 
 
@@ -2446,9 +2447,10 @@ hr {
   letter-spacing: 1.6px;
   cursor: pointer;
   position: relative;
-  padding-bottom: 42px;
+  padding-bottom: 38px;
   padding-right: 22px;
   padding-left: 22px;
+  margin: 0;
 }
 
 .dropbtn:active, .dropbtn:focus {

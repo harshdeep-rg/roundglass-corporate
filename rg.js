@@ -93,7 +93,7 @@ $(".website-content").ready(
     }
 );
 
-    $(document).ready(function() {
+    $('.landing-section-rg').ready(function() {
         
         
         $(".navbar a").hover(function() {
@@ -202,9 +202,9 @@ $(".website-content").ready(
 
             $('#think-breath').css('display', 'block'); 
 
-
-            $('.think-breath-h1,.think-breath-h3').removeClass("text-exit-class");
             $('.think-breath-h1,.think-breath-h3').addClass("text-entry-class");
+            $('.think-breath-h1,.think-breath-h3').removeClass("text-exit-class");
+            
               
 
             $(".the-unshakable-h1,.forest-bathing-h1,.the-unshakable-h3, .forest-bathing-h3").removeClass('text-entry-class');

@@ -1982,10 +1982,7 @@ hr {
   height: auto;
 }
 
-.article-tile img {
-  width: 100%;
-  height: auto;
-}
+
 
 .flourish-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547107533/Flourish_Tile.png);

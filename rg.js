@@ -15,21 +15,20 @@ $(".prelude-content").ready(
         }, 4500);
 
         setTimeout(function(){
+            $(".loader-gif, .ml3").removeClass("visiblility-visible-div");
+          }, 5500);
+
+        setTimeout(function(){
           $(".ml3").addClass("display-none");
         }, 5500);
 
         setTimeout(function(){
           $(".loader-gif").addClass("display-none");
         }, 5500);
-
-    
         
         //NOTE :change these numbers if the loading(document.ready is already taking more time)      
     }
 );
-
-
-
 
     $('.landing-section-rg').ready(function() {
         setTimeout(function(){

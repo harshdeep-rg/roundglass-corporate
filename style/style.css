@@ -521,6 +521,7 @@ body {
   display: table;
   display: table-cell;
   vertical-align: middle;
+  transition: 2s;
 }
 
 /* PRELUDE CONTENT CSS */
@@ -542,7 +543,8 @@ body {
 .loader-gif {
   display: table;
   margin: 0 auto;
-  visibility: hidden;
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .visiblility-visible-div{
@@ -559,7 +561,7 @@ body {
   width: 80%;
   position: relative;
   left: 10%;
-  visibility: hidden;
+  transition: 0.5s;
 }
 
 /* COVER SECTION FOR LARGE SCREEN */
@@ -1173,10 +1175,9 @@ img {
 }
 
 /* classes which get added in jquery */
-.disappear-loader {
-  -webkit-animation: Fadeout 0.8s ease-in-out;
-  animation: Fadeout 0.8s ease-in-out;
-  opacity: 0 !important;
+.disappear-loader- {
+  -webkit-animation: Fadeout 1s ease-in-out;
+  animation: Fadeout 1s ease-in-out;
 }
 
 @-webkit-keyframes Fadeout {
@@ -1265,6 +1266,7 @@ img {
   .disappear-loader {
     -webkit-animation: Fadeout 0.8s ease-in-out;
     animation: Fadeout 0.8s ease-in-out;
+    opacity: 0 !important;
   }
 }
 

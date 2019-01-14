@@ -8,19 +8,19 @@ $(".prelude-content").ready(
         //loader screen slideup animation and change display to none
         setTimeout(function(){
           $(".loader-gif").addClass("disappear-loader");
-        }, 4500);
+        }, 4400);
 
         setTimeout(function(){
           $(".ml3").addClass("disappear-loader");
-        }, 4500);
+        }, 4400);
 
         setTimeout(function(){
             $(".loader-gif, .ml3").removeClass("visiblility-visible-div");
-          }, 5500);
+          }, 5400);
 
         setTimeout(function(){
           $(".ml3").addClass("display-none");
-        }, 5500);
+        }, 5400);
 
         setTimeout(function(){
           $(".loader-gif").addClass("display-none");
@@ -33,11 +33,11 @@ $(".prelude-content").ready(
     $('.landing-section-rg').ready(function() {
         setTimeout(function(){
             $(".prelude").addClass("loader-slide-up");
-          }, 5900);
+          }, 5600);
   
           setTimeout(function(){
             $(".prelude").addClass("display-none");
-          }, 7900);
+          }, 7600);
   
           //make website content appear
           setTimeout(function(){
@@ -46,7 +46,7 @@ $(".prelude-content").ready(
   
           setTimeout(function(){
               $(".cover-image").addClass("zoom-animation");
-            }, 6000);
+            }, 5400);
   
             setTimeout(function(){
               $(".cover-image").removeClass("zoom-animation");

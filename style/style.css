@@ -544,7 +544,6 @@ body {
   display: table;
   margin: 0 auto;
   opacity: 1;
-  transition: 0.5s;
 }
 
 .visiblility-visible-div{
@@ -1175,7 +1174,7 @@ img {
 }
 
 /* classes which get added in jquery */
-.disappear-loader- {
+.disappear-loader{
   -webkit-animation: Fadeout 1s ease-in-out;
   animation: Fadeout 1s ease-in-out;
   opacity: 0;

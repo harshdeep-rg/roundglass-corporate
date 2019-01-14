@@ -1,8 +1,6 @@
 $(".prelude-content").ready(
     function hideLoader(){
         //loader screen slideup animation and change display to none
-
-
         setTimeout(function(){
           $(".loader-gif").addClass("disappear-loader");
         }, 4500);
@@ -13,11 +11,11 @@ $(".prelude-content").ready(
 
         setTimeout(function(){
           $(".ml3").addClass("display-none");
-        }, 5400);
+        }, 5500);
 
         setTimeout(function(){
           $(".loader-gif").addClass("display-none");
-        }, 5400);
+        }, 5500);
 
     
         setTimeout(function(){

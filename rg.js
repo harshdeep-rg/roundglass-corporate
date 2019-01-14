@@ -13,11 +13,11 @@ $(".landing-section-rg").ready(
 
         setTimeout(function(){
           $(".ml3").addClass("display-none");
-        }, 5500);
+        }, 5400);
 
         setTimeout(function(){
           $(".loader-gif").addClass("display-none");
-        }, 5500);
+        }, 5400);
 
     
         setTimeout(function(){

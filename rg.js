@@ -1,105 +1,91 @@
 
 
+$( ".prelude-content" ).ready(function() {
+    $(".loader-gif").css('visibility', 'visible');
+    $(".ml3").css('visibility', 'visible');
+});
 
+$( ".landing-section-rg" ).ready(function() {
+    setTimeout(function(){
+        $(".loader-gif").addClass("disappear-loader");
+    }, 4500);
 
-$(".landing-section-rg").ready(
-        function hideLoader(){
-            //loader screen slideup animation and change display to none
-            $('.ml3').each(function(){
-                $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-            });
-    
-            anime.timeline({loop: false})
-                .add({
-                    targets: '.ml3 .letter',
-                    opacity: [0,1],
-                    easing: "easeInOutQuad",
-                    duration: 1200,
-                    delay: function(el, i) {
-                      return 60 * (i+1)
-                }
-            });
-            
-            setTimeout(function(){
-              $(".loader-gif").addClass("disappear-loader");
-            }, 4500);
+    setTimeout(function(){
+        $(".ml3").addClass("disappear-loader");
+    }, 4500);
 
-            setTimeout(function(){
-              $(".ml3").addClass("disappear-loader");
-            }, 4500);
+    setTimeout(function(){
+        $(".ml3").addClass("display-none");
+    }, 5300);
 
-            setTimeout(function(){
-              $(".ml3").addClass("display-none");
-            }, 5300);
+    setTimeout(function(){
+        $(".loader-gif").addClass("display-none");
+    }, 5200);
 
-            setTimeout(function(){
-              $(".loader-gif").addClass("display-none");
-            }, 5200);
+    setTimeout(function(){
+        $(".prelude").addClass("loader-slide-up");
+    }, 5500);
 
-            setTimeout(function(){
-              $(".prelude").addClass("loader-slide-up");
-            }, 5500);
+    setTimeout(function(){
+        $(".prelude").addClass("display-none");
+    }, 7500);
 
-            setTimeout(function(){
-              $(".prelude").addClass("display-none");
-            }, 7500);
+    //make website content appear
+    setTimeout(function(){
+        $(".website-content").css('display', 'block');
+    }, 5200/* should be 5400 */);
 
-            //make website content appear
-            setTimeout(function(){
-              $(".website-content").css('display', 'block');
-            }, 5200/* should be 5400 */);
+    setTimeout(function(){
+        $(".cover-image").addClass("zoom-animation");
+        }, 5200);
 
-            setTimeout(function(){
-                $(".cover-image").addClass("zoom-animation");
-              }, 5200);
+        setTimeout(function(){
+        $(".cover-image").removeClass("zoom-animation");
+        }, 7900);
 
-              setTimeout(function(){
-                $(".cover-image").removeClass("zoom-animation");
-              }, 7900);
+    setTimeout(function(){
+        $('.slider').slick({
+            infinite: true,
+            centerMode: true,
+            centerPadding: '16.5%',
+            slidesToShow: 2,
+            speed: 500,
+            mobileFirst:true,
+            responsive: [
+                {
+                    breakpoint: 2000,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                
+                {
+                    breakpoint: 200,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerPadding: '14%',
+                    }
+                }       
+            ]
+        });
 
-            setTimeout(function(){
-                $('.slider').slick({
-                    infinite: true,
-                    centerMode: true,
-                    centerPadding: '16.5%',
-                    slidesToShow: 2,
-                    speed: 500,
-                    mobileFirst:true,
-                    responsive: [
-                        {
-                            breakpoint: 2000,
-                              settings: {
-                                        slidesToShow: 4,
-                                        slidesToScroll: 1,
-                                        }
-                        },
-                        {
-                            breakpoint: 700,
-                            settings: {
-                                        slidesToShow: 2,
-                                        slidesToScroll: 1
-                                      }
-                        },
-                        
-                        {
-                            breakpoint: 200,
-                            settings: {
-                                        slidesToShow: 1,
-                                        slidesToScroll: 1,
-                                        centerPadding: '14%',
-                                      }
-                        }       
-                    ]
-                });
-        
-              }, 5200/* should be 5400 */);
+        }, 5200
+    );
 
-              setTimeout(function(){
-                new WOW().init();
-              }, 5200/* should be 5400 */);
-            //NOTE :change these numbers if the loading(document.ready is already taking more time)      
-    }
-);
+        setTimeout(function(){
+        new WOW().init();
+        }, 5200/* should be 5400 */);     
+});
+
 
     $('.landing-section-rg').ready(function() {
         

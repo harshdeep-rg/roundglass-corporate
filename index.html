@@ -1245,9 +1245,26 @@
            </div>
           <!-- end of website-content div  below--> 
         </div>
+       
 
         <script src="anime.min.js"></script>
         <script type="text/javascript" src="slick.min.js"></script>   
         <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
+        <script>
+            $('.ml3').each(function(){
+                $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+            });
+
+        anime.timeline({loop: false})
+            .add({
+                targets: '.ml3 .letter',
+                opacity: [0,1],
+                easing: "easeInOutQuad",
+                duration: 1200,
+                delay: function(el, i) {
+                    return 60 * (i+1)
+                }
+            });
+        </script>
     </body>
 </html>

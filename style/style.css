@@ -542,6 +542,11 @@ body {
 .loader-gif {
   display: table;
   margin: 0 auto;
+  visibility: hidden;
+}
+
+.visiblility-visible-div{
+  visibility: visible !important;
 }
 
 .ml3 {
@@ -554,6 +559,7 @@ body {
   width: 80%;
   position: relative;
   left: 10%;
+  visibility: hidden;
 }
 
 /* COVER SECTION FOR LARGE SCREEN */
@@ -1170,6 +1176,7 @@ img {
 .disappear-loader {
   -webkit-animation: Fadeout 0.8s ease-in-out;
   animation: Fadeout 0.8s ease-in-out;
+  opacity: 0 !important;
 }
 
 @-webkit-keyframes Fadeout {

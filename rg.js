@@ -28,10 +28,13 @@ $(".prelude-content").ready(
     }
 );
 
+
+
+
     $('.landing-section-rg').ready(function() {
         setTimeout(function(){
             $(".prelude").addClass("loader-slide-up");
-          }, 5800);
+          }, 5900);
   
           setTimeout(function(){
             $(".prelude").addClass("display-none");

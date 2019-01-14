@@ -1,5 +1,10 @@
 $(".prelude-content").ready(
     function hideLoader(){
+
+        setTimeout(function(){
+            $(".loader-gif, .ml3").addClass("visiblility-visible-div");
+          }, 0);
+
         //loader screen slideup animation and change display to none
         setTimeout(function(){
           $(".loader-gif").addClass("disappear-loader");
@@ -18,82 +23,79 @@ $(".prelude-content").ready(
         }, 5500);
 
     
-        setTimeout(function(){
-          $(".prelude").addClass("loader-slide-up");
-        }, 5600);
-
-        setTimeout(function(){
-          $(".prelude").addClass("display-none");
-        }, 7800);
-
-        //make website content appear
-        setTimeout(function(){
-          $(".website-content").css('display', 'block');
-        }, 5400/* should be 5400 */);
-
-        setTimeout(function(){
-            $(".cover-image").addClass("zoom-animation");
-          }, 5400);
-
-          setTimeout(function(){
-            $(".cover-image").removeClass("zoom-animation");
-          }, 8100);
-
-        setTimeout(function(){
-            $('.slider').slick({
-                infinite: true,
-                centerMode: true,
-                centerPadding: '16.5%',
-                slidesToShow: 2,
-                speed: 500,
-                mobileFirst:true,
-                responsive: [
-                    {
-                        breakpoint: 2000,
-                          settings: {
-                                    slidesToShow: 4,
-                                    slidesToScroll: 1,
-                                    }
-                    },
-                    {
-                        breakpoint: 700,
-                        settings: {
-                                    slidesToShow: 2,
-                                    slidesToScroll: 1
-                                  }
-                    },
-                    
-                    {
-                        breakpoint: 200,
-                        settings: {
-                                    slidesToShow: 1,
-                                    slidesToScroll: 1,
-                                    centerPadding: '14%',
-                                  }
-                    }       
-                ]
-    
-               
-            });
-    
-          }, 5400/* should be 5400 */);
-
-          setTimeout(function(){
-            new WOW().init();
-    
-               
-           
-    
-          }, 5400/* should be 5400 */);
+        
         //NOTE :change these numbers if the loading(document.ready is already taking more time)      
-}
+    }
 );
 
-
-
-
     $('.landing-section-rg').ready(function() {
-        
+        setTimeout(function(){
+            $(".prelude").addClass("loader-slide-up");
+          }, 5900);
+  
+          setTimeout(function(){
+            $(".prelude").addClass("display-none");
+          }, 7900);
+  
+          //make website content appear
+          setTimeout(function(){
+            $(".website-content").css('display', 'block');
+          }, 5400/* should be 5400 */);
+  
+          setTimeout(function(){
+              $(".cover-image").addClass("zoom-animation");
+            }, 6000);
+  
+            setTimeout(function(){
+              $(".cover-image").removeClass("zoom-animation");
+            }, 9000);
+  
+          setTimeout(function(){
+              $('.slider').slick({
+                  infinite: true,
+                  centerMode: true,
+                  centerPadding: '16.5%',
+                  slidesToShow: 2,
+                  speed: 500,
+                  mobileFirst:true,
+                  responsive: [
+                      {
+                          breakpoint: 2000,
+                            settings: {
+                                      slidesToShow: 4,
+                                      slidesToScroll: 1,
+                                      }
+                      },
+                      {
+                          breakpoint: 700,
+                          settings: {
+                                      slidesToShow: 2,
+                                      slidesToScroll: 1
+                                    }
+                      },
+                      
+                      {
+                          breakpoint: 200,
+                          settings: {
+                                      slidesToShow: 1,
+                                      slidesToScroll: 1,
+                                      centerPadding: '14%',
+                                    }
+                      }       
+                  ]
+      
+                 
+              });
+      
+            }, 5400/* should be 5400 */);
+  
+            setTimeout(function(){
+              new WOW().init();
+      
+                 
+             
+      
+            }, 5400/* should be 5400 */);
         
         $(".navbar a").hover(function() {
             $(this).css("opacity", 1).siblings().stop().animate({

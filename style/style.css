@@ -1177,7 +1177,7 @@ img {
 .disappear-loader{
   -webkit-animation: Fadeout 1s ease-in-out;
   animation: Fadeout 1s ease-in-out;
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 @-webkit-keyframes Fadeout {
@@ -1199,7 +1199,7 @@ img {
 }
 
 .display-none {
-  display: none;
+  display: none !important;
   height: 0px;
   transition: 0s;
   -webkit-transition: 0s;

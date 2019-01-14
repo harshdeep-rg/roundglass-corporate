@@ -20,7 +20,7 @@ $(".prelude-content").ready(
     
         setTimeout(function(){
           $(".prelude").addClass("loader-slide-up");
-        }, 5800);
+        }, 5600);
 
         setTimeout(function(){
           $(".prelude").addClass("display-none");

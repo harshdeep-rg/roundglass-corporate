@@ -9,6 +9,13 @@
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/loader.gif);
 }
 
+@media(max-width:600px){
+  .loader-tile{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1547466075/loader-2.gif);
+    padding-bottom: 8px;
+  }
+}
+
 .roundglass-logo{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg);
 }

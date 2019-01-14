@@ -1,4 +1,4 @@
-$(".landing-section-rg").ready(
+$(".prelude-content").ready(
     function hideLoader(){
         //loader screen slideup animation and change display to none
 

@@ -5,6 +5,21 @@
 $(".landing-section-rg").ready(
         function hideLoader(){
             //loader screen slideup animation and change display to none
+            $('.ml3').each(function(){
+                $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+            });
+    
+            anime.timeline({loop: false})
+                .add({
+                    targets: '.ml3 .letter',
+                    opacity: [0,1],
+                    easing: "easeInOutQuad",
+                    duration: 1200,
+                    delay: function(el, i) {
+                      return 60 * (i+1)
+                }
+            });
+            
             setTimeout(function(){
               $(".loader-gif").addClass("disappear-loader");
             }, 4500);
@@ -14,34 +29,33 @@ $(".landing-section-rg").ready(
             }, 4500);
 
             setTimeout(function(){
-              $(".ml3").css('display', 'none');
-            }, 5500);
+              $(".ml3").addClass("display-none");
+            }, 5300);
 
             setTimeout(function(){
-              $(".loader-gif").css('display', 'none');
-            }, 5500);
+              $(".loader-gif").addClass("display-none");
+            }, 5300);
 
-        
             setTimeout(function(){
               $(".prelude").addClass("loader-slide-up");
-            }, 5700);
+            }, 5500);
 
             setTimeout(function(){
               $(".prelude").addClass("display-none");
-            }, 7700);
+            }, 7500);
 
             //make website content appear
             setTimeout(function(){
               $(".website-content").css('display', 'block');
-            }, 5400/* should be 5400 */);
+            }, 5200/* should be 5400 */);
 
             setTimeout(function(){
                 $(".cover-image").addClass("zoom-animation");
-              }, 5400);
+              }, 5200);
 
               setTimeout(function(){
                 $(".cover-image").removeClass("zoom-animation");
-              }, 8100);
+              }, 7900);
 
             setTimeout(function(){
                 $('.slider').slick({
@@ -76,19 +90,13 @@ $(".landing-section-rg").ready(
                                       }
                         }       
                     ]
-        
-                   
                 });
         
-              }, 5400/* should be 5400 */);
+              }, 5200/* should be 5400 */);
 
               setTimeout(function(){
                 new WOW().init();
-        
-                   
-               
-        
-              }, 5400/* should be 5400 */);
+              }, 5200/* should be 5400 */);
             //NOTE :change these numbers if the loading(document.ready is already taking more time)      
     }
 );
@@ -136,20 +144,7 @@ $(".landing-section-rg").ready(
 
         $('.cover-image').paroller();
 
-        $('.ml3').each(function(){
-            $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-        });
-
-        anime.timeline({loop: false})
-            .add({
-                targets: '.ml3 .letter',
-                opacity: [0,1],
-                easing: "easeInOutQuad",
-                duration: 1200,
-                delay: function(el, i) {
-                  return 60 * (i+1)
-            }
-        });
+        
 
         $(document).ready(function(){
             $('.carousel').slick({

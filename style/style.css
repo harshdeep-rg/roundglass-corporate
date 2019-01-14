@@ -591,6 +591,10 @@ body {
     display: block;
   }
 
+  .cover-image{
+    background-position: center 0px;
+  }
+
   .small-screen {
     display: none;
   }
@@ -1164,8 +1168,8 @@ img {
 
 /* classes which get added in jquery */
 .disappear-loader {
-  -webkit-animation: Fadeout 1s ease-in-out;
-  animation: Fadeout 1s ease-in-out;
+  -webkit-animation: Fadeout 0.8s ease-in-out;
+  animation: Fadeout 0.8s ease-in-out;
 }
 
 @-webkit-keyframes Fadeout {
@@ -2222,9 +2226,9 @@ hr {
 }
 
 .social-icons img:hover {
-  -ms-transform: translate(0px, -3px);
-  -webkit-transform: translate(0px, -3px);
-  transform: translate(0px, -3px);
+  -ms-transform: translate(0px, -2px);
+  -webkit-transform: translate(0px, -2px);
+  transform: translate(0px, -2px);
 }
 
 @media (max-width:1440px){
@@ -2342,6 +2346,7 @@ hr {
   border: none;
   border-radius: 0;
   font-size: 0px;
+  transition: 0.5s;
 }
 
 
@@ -2417,6 +2422,7 @@ hr {
   color: white;
   text-decoration: none;
   top: 0;
+  transition: 0.3s;
   position: relative;
   padding-top: 42px !important;
   padding-left: 22px;
@@ -2447,6 +2453,7 @@ hr {
   padding-right: 22px;
   padding-left: 22px;
   margin: 0;
+  transition: 0.3s;
 }
 
 .dropbtn:active, .dropbtn:focus {
@@ -2466,6 +2473,7 @@ hr {
   border-color: #ededed;
   padding-left: 32px;
   padding-right: 32px;
+  transition: 0.3s;
 }
 
 .applications-dropdown {

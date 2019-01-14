@@ -34,7 +34,7 @@ $(".landing-section-rg").ready(
 
             setTimeout(function(){
               $(".loader-gif").addClass("display-none");
-            }, 5300);
+            }, 5200);
 
             setTimeout(function(){
               $(".prelude").addClass("loader-slide-up");

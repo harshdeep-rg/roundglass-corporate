@@ -1195,6 +1195,7 @@ img {
   height: 0px;
   transition: 0s;
   -webkit-transition: 0s;
+  opacity: 0 !important;
 }
 
 .display-block {

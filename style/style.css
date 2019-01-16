@@ -1882,7 +1882,7 @@ hr {
 }
 
 .applications-snippet p {
-  width: 90%;
+  width: 88%;
 }
 
 @media(max-width:600px){
@@ -2021,6 +2021,25 @@ hr {
 .image-frame {
   overflow: hidden;
   height: auto;
+  position: relative;
+}
+
+.coming-soon-tag {
+  content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1547631473/Coming_Soon_Tag.svg);
+  position: absolute;
+  margin-bottom: 0;
+  margin-left: -1px;
+  margin-top : -31px;
+  width : 132px !important; 
+  height : 32px !important;
+}
+
+@media(max-width:600px){
+  .coming-soon-tag {
+    width : 99px !important; 
+    height : 24px !important;
+    margin-top : -23px;
+  }
 }
 
 .article-tile img {
@@ -2073,7 +2092,7 @@ hr {
 }
 
 .Wildly-tile{
-  content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111045/Wildly_Tile.png);
+  content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1547633261/wildly-tile.png);
 }
 
 .Sports-tile{
@@ -2081,41 +2100,42 @@ hr {
 }
 
 .Journeys-tile{
-  content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111039/Journeys_Tile.png);
+  content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1547633904/journeys-tile-min.png);
 }
 
 .thumbnail-frame {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-  -webkit-transition-timing-function: ease;
-       -o-transition-timing-function: ease;
-          transition-timing-function: ease;
+  -webkit-transition-timing-function: cubic-bezier(.694,0,.335,1);
+       -o-transition-timing-function: cubic-bezier(.694,0,.335,1);
+          transition-timing-function: cubic-bezier(.694,0,.335,1);
   cursor: pointer;
   position: relative;
 }
 
 .thumbnail-frame img {
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 1s;
-  -webkit-transition-timing-function: ease;
-       -o-transition-timing-function: ease;
-          transition-timing-function: ease;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
   position: relative;
 }
 
 .thumbnail-frame:hover img {
-  -webkit-transform: scale(1.04);
-  -ms-transform: scale(1.04);
-      transform: scale(1.04);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+      transform: scale(1.05);
 }
 
+/*
 .thumbnail-frame:hover {
   -webkit-transform: scale(0.99);
   -ms-transform: scale(0.99);
       transform: scale(0.99);
-}
+} */
 
 .heading-hr {
   width: 100%;
@@ -2341,12 +2361,7 @@ hr {
   width: 88%;
 }
 
-.coming-soon {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: -32px;
-}
+
 
 .phrase-1 a {
   text-decoration: none;

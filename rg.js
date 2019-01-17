@@ -51,9 +51,6 @@ $('.landing-section-rg').ready(function() {
         $(".cover-image").removeClass("zoom-animation");
     }, 9000);
 
-    // Activate parallax in cover image
-    $('.cover-image').paroller();
-
     // Navbar scroll behaviour
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -243,20 +240,6 @@ $('.landing-section-rg').ready(function() {
             $(this).css('display', 'none'); 
             next(); 
         });      
-    });
-
-    $('#control-4').click( function(){
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-      
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 150, function(){
-         
-              window.location.hash = hash;
-            });
-        } 
     });
 // end of Javascript
 });

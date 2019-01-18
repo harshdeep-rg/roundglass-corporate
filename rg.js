@@ -99,6 +99,9 @@ $('.landing-section-rg').ready(function() {
         touchThreshold: 10      
     });  
 
+    
+
+    
     setTimeout(function(){
         $('.slider').slick({
             infinite: true,
@@ -132,7 +135,7 @@ $('.landing-section-rg').ready(function() {
                 }       
             ] 
         });
-    }, 5400);
+    }, 5400); 
 
     // Activate scroll animation
     setTimeout(function(){

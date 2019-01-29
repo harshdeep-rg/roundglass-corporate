@@ -1,4 +1,5 @@
 $(".prelude-content").ready(function hideLoader(){
+    /*
     // Loader content visible
     setTimeout(function(){
         $(".loader-gif, .ml3").addClass("visiblility-visible-div");
@@ -25,9 +26,35 @@ $(".prelude-content").ready(function hideLoader(){
     setTimeout(function(){
     $(".loader-gif").addClass("display-none");
     }, 5500);
+
+
+    $('.forest-bathing-h1,.forest-bathing-h3').removeClass("text-exit-class");
+    $('.forest-bathing-h1,.forest-bathing-h3').addClass("text-entry-class ");
+    */
+
+    /* ********************* NOTE *********************
+    For the returning user, simple slide up animation */
+
+    setTimeout(function(){
+        $(".loader-repeat-image").addClass("text-entry-class-loader");
+    }, 0);
+
+
+    setTimeout(function(){
+        $(".loader-repeat-image").removeClass("text-entry-class-loader");
+        $(".loader-repeat-image").addClass("text-exit-class-loader");
+    }, 1500);
+    setTimeout(function(){
+        $(".loader-repeat-image").addClass("display-none");
+    }, 2000);
+
+    
 });
 
 $('.landing-section-rg').ready(function() {
+
+    /* UNCOMMENT TO VIEW FULL LOADER
+
     // Loader slideUp animation 
     setTimeout(function(){
         $(".prelude").addClass("loader-slide-up");
@@ -50,6 +77,33 @@ $('.landing-section-rg').ready(function() {
     setTimeout(function(){
         $(".cover-image").removeClass("zoom-animation");
     }, 9000);
+    */
+
+    /* ********************* NOTE *********************
+    For the returning user, simple slide up animation */
+    setTimeout(function(){
+        $(".prelude").addClass("loader-slide-up");
+    }, 2000);
+
+    setTimeout(function(){
+        $(".prelude").addClass("display-none");
+    }, 4000);
+
+    // Website content reveal
+    setTimeout(function(){
+        $(".website-content").css('display', 'block');
+        $('.cover-image').paroller();
+    },1800);
+
+    // Cover image zoom out animation
+    setTimeout(function(){
+        $(".cover-image").addClass("zoom-animation");
+    }, 1800);
+
+    setTimeout(function(){
+        $(".cover-image").removeClass("zoom-animation");
+    }, 4800);
+
 
     // Navbar scroll behaviour
     $(window).scroll(function () {
@@ -64,6 +118,9 @@ $('.landing-section-rg').ready(function() {
             $(".dropbtn").css("color", "#2d2d2d");
             $(".dropdown-content a").css("color", "#2d2d2d");
             $(".roundglass-logo").css("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/logo-dark.svg)");
+            $(".bar1").css("background-color", "#2d2d2d");
+            $(".bar2").css("background-color", "#2d2d2d");
+            $(".bar3").css("background-color", "#2d2d2d");
         } 
 
         else if (scroll < 600 && scroll >50) {
@@ -75,6 +132,9 @@ $('.landing-section-rg').ready(function() {
             $(".dropbtn").css("color", "white");
             $(".dropdown-content a").css("color", "#2d2d2d");
             $(".roundglass-logo").css("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)");
+            $(".bar1").css("background-color", "white");
+            $(".bar2").css("background-color", "white");
+            $(".bar3").css("background-color", "white");
         } 
 
         else {
@@ -86,10 +146,23 @@ $('.landing-section-rg').ready(function() {
             $(".dropbtn").css("color", "white");
             $(".dropdown-content a").css("color", "#2d2d2d");
             $(".roundglass-logo").css("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)");
+            $(".bar1").css("background-color", "white");
+            $(".bar2").css("background-color", "white");
+            $(".bar3").css("background-color", "white");
         }
-    });   
-
+    });
+    
+    // show hamburger on mobile
+    $('.hamburger-menu').click(function(){
+        $('.menu-small-screen').css("right", "0");
+     });
+     $('.close-icon').click(function(){
+        $('.menu-small-screen').css("right", "-100%");
+     });
+     
     // Activate slick slider in video-tile and small screen cover section
+
+    /* TIME VALUSE FOR FULL LOADER IS 5400 AND FOR SMALL LOADER IS 2000 */
     $('.carousel').slick({
         speed: 600,
         slidesToShow: 1,
@@ -99,48 +172,79 @@ $('.landing-section-rg').ready(function() {
         touchThreshold: 10      
     });  
 
-    
-
-    
     setTimeout(function(){
         $('.slider').slick({
-            infinite: true,
             centerMode: true,
-            centerPadding: '16.5%',
-            slidesToShow: 2,
-            speed: 500,
-            mobileFirst:true,
-            responsive: [
+			centerPadding: '17%',
+			autoplay: false,
+			arrows: false,
+            autoplaySpeed: 3000,
+            swipeToSlide: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+			focusOnSelect: true,
+			dots: false,
+			infinite: false,
+			responsive: [
                 {
-                    breakpoint: 2000,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 700,
-                    settings: {
+					breakpoint: 2200,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '16%',
                         slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 200,
-                    settings: {
+                        infinite: true
+                        
+					}
+				},
+				{
+					breakpoint: 1540,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '10%',
+                        slidesToShow: 2,
+                        infinite: true
+					}
+				},
+				{
+					breakpoint: 1440,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '8%',
+                        slidesToShow: 2,
+                        infinite: true
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '17%',
                         slidesToShow: 1,
-                        slidesToScroll: 1,
-                        centerPadding: '14%',
-                    }
-                }       
-            ] 
+                        infinite: true
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						arrows: false,
+						centerMode: true,
+						centerPadding: '7%',
+                        slidesToShow: 1,
+                        infinite: true
+					}
+				}
+			]
         });
-    }, 5400); 
+    }, 2000 /* 5400 for full loader */); 
 
     // Activate scroll animation
     setTimeout(function(){
         new WOW().init();
-    }, 5400);
+    }, 2000 /* 5400 for full loader */);
 
     // See more chevron animation on hover
     $('.round').click(function(e) {
@@ -198,7 +302,7 @@ $('.landing-section-rg').ready(function() {
         }, { duration: animation_time_2},{specialEasing:"easeInOut"});
                 
         $(".yellow-line-container").animate({
-            marginLeft:'29%'
+            marginLeft:'28.3%'
         }, { duration: animation_time_3},{specialEasing:"easeInOut"}); 
 
         $('#the-unshakable').css('display', 'block'); 
@@ -227,7 +331,7 @@ $('.landing-section-rg').ready(function() {
         }, { duration: animation_time_2},{specialEasing:"easeInOut"});  
 
         $(".yellow-line-container").animate({
-            marginLeft:'58%'
+            marginLeft:'56.3%'
         }, { duration: animation_time_3},{specialEasing:"easeInOut"});   
 
         $('#forest-bathing').css('display', 'block'); 

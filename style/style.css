@@ -516,7 +516,7 @@ body {
 }
 
 .website-content {
-  display: block;
+  display: none;
 }
 
 .prelude {

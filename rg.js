@@ -1,7 +1,7 @@
 
- /*
+
 $(".prelude-content").ready(function hideLoader(){
-   
+    /*
     // Loader content visible
     setTimeout(function(){
         $(".loader-gif, .ml3").addClass("visiblility-visible-div");
@@ -35,7 +35,7 @@ $(".prelude-content").ready(function hideLoader(){
     */
 
     /* ********************* NOTE *********************
-    For the returning user, simple slide up animation 
+    For the returning user, simple slide up animation */
 
     setTimeout(function(){
         $(".loader-repeat-image").addClass("text-entry-class-loader");
@@ -51,7 +51,7 @@ $(".prelude-content").ready(function hideLoader(){
     }, 2000);
 
     
-}); */
+});
 
 $('.landing-section-rg').ready(function() {
 
@@ -82,7 +82,7 @@ $('.landing-section-rg').ready(function() {
     */
 
     /* ********************* NOTE *********************
-    For the returning user, simple slide up animation 
+    For the returning user, simple slide up animation */
     setTimeout(function(){
         $(".prelude").addClass("loader-slide-up");
     }, 2000);
@@ -92,24 +92,20 @@ $('.landing-section-rg').ready(function() {
     }, 4000);
 
     // Website content reveal
-    
+    setTimeout(function(){
+        $(".website-content").css('display', 'block');
+        $('.cover-image').paroller();
+    },1800);
 
     // Cover image zoom out animation
-    
-    */
-
-   setTimeout(function(){
-    $(".website-content").css('display', 'block');
-    $('.cover-image').paroller();
-    },0);
-
-   setTimeout(function(){
-    $(".cover-image").addClass("zoom-animation");
-    }, 0);
+    setTimeout(function(){
+        $(".cover-image").addClass("zoom-animation");
+    }, 1800);
 
     setTimeout(function(){
         $(".cover-image").removeClass("zoom-animation");
-    }, 2500);
+    }, 4800);
+
 
     // Navbar scroll behaviour
     $(window).scroll(function () {
@@ -245,12 +241,12 @@ $('.landing-section-rg').ready(function() {
 				}
 			]
         });
-    }, 0 /* 5400 for full loader. 2000 for small loader */); 
+    }, 2000 /* 5400 for full loader */); 
 
     // Activate scroll animation
     setTimeout(function(){
         new WOW().init();
-    }, 0 /* 5400 for full loader. 2000 for small loader */);
+    }, 2000 /* 5400 for full loader */);
 
     // See more chevron animation on hover
     $('.round').click(function(e) {

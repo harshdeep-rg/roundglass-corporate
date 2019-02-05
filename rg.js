@@ -1,1 +1,289 @@
-$(".prelude-content").ready(function(){setTimeout(function(){$(".loader-repeat-image").addClass("text-entry-class-loader")},0),setTimeout(function(){$(".loader-repeat-image").removeClass("text-entry-class-loader"),$(".loader-repeat-image").addClass("text-exit-class-loader")},1500),setTimeout(function(){$(".loader-repeat-image").addClass("display-none")},2e3)}),$(".landing-section-rg").ready(function(){setTimeout(function(){$(".prelude").addClass("loader-slide-up")},2e3),setTimeout(function(){$(".prelude").addClass("display-none")},4e3),setTimeout(function(){$(".website-content").css("display","block"),$(".cover-image").paroller()},1800),setTimeout(function(){$(".cover-image").addClass("zoom-animation")},1800),setTimeout(function(){$(".cover-image").removeClass("zoom-animation")},4800),$(window).scroll(function(){var e=$(window).scrollTop();e>600?($(".navbar").css("opacity","1"),$(".navbar").css("background","white"),$(".navbar").css("border-bottom","1px solid"),$(".navbar").css("border-color","rgba(237, 237, 237, 1)"),$(".navbar a").css("color","#2d2d2d"),$(".dropbtn").css("color","#2d2d2d"),$(".dropdown-content a").css("color","#2d2d2d"),$(".roundglass-logo").css("content","url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/logo-dark.svg)"),$(".bar1").css("background-color","#2d2d2d"),$(".bar2").css("background-color","#2d2d2d"),$(".bar3").css("background-color","#2d2d2d")):e<600&&e>50?($(".navbar").css("opacity","0"),$(".navbar").css("background",""),$(".navbar").css("border-bottom","none"),$(".navbar").css("border-color","rgba(237, 237, 237, 0)"),$(".navbar a").css("color","white"),$(".dropbtn").css("color","white"),$(".dropdown-content a").css("color","#2d2d2d"),$(".roundglass-logo").css("content","url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)"),$(".bar1").css("background-color","white"),$(".bar2").css("background-color","white"),$(".bar3").css("background-color","white")):($(".navbar").css("opacity","1"),$(".navbar").css("background",""),$(".navbar").css("border-bottom","none"),$(".navbar").css("border-color","rgba(237, 237, 237, 0)"),$(".navbar a").css("color","white"),$(".dropbtn").css("color","white"),$(".dropdown-content a").css("color","#2d2d2d"),$(".roundglass-logo").css("content","url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)"),$(".bar1").css("background-color","white"),$(".bar2").css("background-color","white"),$(".bar3").css("background-color","white"))}),$(".hamburger-menu").click(function(){$(".menu-small-screen").css("right","0")}),$(".close-icon").click(function(){$(".menu-small-screen").css("right","-100%")}),$(".carousel").slick({speed:600,slidesToShow:1,centerPaddingLeft:"16.5%",centerMode:!0,variableWidth:!0,touchThreshold:10}),setTimeout(function(){$(".slider").slick({centerMode:!0,centerPadding:"17%",autoplay:!1,arrows:!1,autoplaySpeed:3e3,swipeToSlide:!0,slidesToShow:4,slidesToScroll:1,focusOnSelect:!0,dots:!1,infinite:!1,responsive:[{breakpoint:2200,settings:{arrows:!1,centerMode:!0,centerPadding:"16%",slidesToShow:2,infinite:!0}},{breakpoint:1540,settings:{arrows:!1,centerMode:!0,centerPadding:"10%",slidesToShow:2,infinite:!0}},{breakpoint:1440,settings:{arrows:!1,centerMode:!0,centerPadding:"8%",slidesToShow:2,infinite:!0}},{breakpoint:768,settings:{arrows:!1,centerMode:!0,centerPadding:"17%",slidesToShow:1,infinite:!0}},{breakpoint:600,settings:{arrows:!1,centerMode:!0,centerPadding:"7%",slidesToShow:1,infinite:!0}}]})},2e3),setTimeout(function(){(new WOW).init()},2e3),$(".round").click(function(e){e.preventDefault(),e.stopPropagation(),$(".arrow").toggleClass("bounceAlpha")}),$("#think-breath").css("display","block"),$("#think-breath-h1,#think-breath-h3").addClass("text-entry-class");$("#control-1").click(function(){$("#img-1").animate({opacity:"1"},{duration:300},{specialEasing:"easeInOut"}),$("#img-2, #img-3").animate({opacity:"0"},{duration:200},{specialEasing:"easeInOut"}),$(".yellow-line-container").animate({marginLeft:"0%"},{duration:500},{specialEasing:"easeInOut"}),$("#think-breath").css("display","block"),$(".think-breath-h1,.think-breath-h3").addClass("text-entry-class"),$(".think-breath-h1,.think-breath-h3").removeClass("text-exit-class"),$(".the-unshakable-h1,.forest-bathing-h1,.the-unshakable-h3, .forest-bathing-h3").removeClass("text-entry-class"),$(".the-unshakable-h1,.forest-bathing-h1,.the-unshakable-h3, .forest-bathing-h3").addClass("text-exit-class"),$("#the-unshakable, #forest-bathing").delay(490).queue(function(e){$(this).css("display","none"),e()})}),$("#control-2").click(function(){$("#img-1, #img-3").animate({opacity:"0"},{duration:200},{specialEasing:"easeInOut"}),$("#img-2").animate({opacity:"1"},{duration:300},{specialEasing:"easeInOut"}),$(".yellow-line-container").animate({marginLeft:"28.3%"},{duration:500},{specialEasing:"easeInOut"}),$("#the-unshakable").css("display","block"),$(".the-unshakable-h1,.the-unshakable-h3").removeClass("text-exit-class"),$(".the-unshakable-h1,.the-unshakable-h3").addClass("text-entry-class"),$(".think-breath-h1, .forest-bathing-h1,.think-breath-h3, .forest-bathing-h3").removeClass("text-entry-class"),$(".think-breath-h1, .forest-bathing-h1,.think-breath-h3, .forest-bathing-h3").addClass("text-exit-class"),$("#think-breath, #forest-bathing").delay(490).queue(function(e){$(this).css("display","none"),e()})}),$("#control-3").click(function(){$("#img-1, #img-2").animate({opacity:"0"},{duration:200},{specialEasing:"easeInOut"}),$("#img-3").animate({opacity:"1"},{duration:300},{specialEasing:"easeInOut"}),$(".yellow-line-container").animate({marginLeft:"56.3%"},{duration:500},{specialEasing:"easeInOut"}),$("#forest-bathing").css("display","block"),$(".forest-bathing-h1,.forest-bathing-h3").removeClass("text-exit-class"),$(".forest-bathing-h1,.forest-bathing-h3").addClass("text-entry-class"),$(".think-breath-h1, .the-unshakable-h1,.think-breath-h3, .the-unshakable-h3").removeClass("text-entry-class"),$(".think-breath-h1, .the-unshakable-h1,.think-breath-h3, .the-unshakable-h3").addClass("text-exit-class"),$("#think-breath, #the-unshakable").delay(490).queue(function(e){$(this).css("display","none"),e()})})});
+
+$('.landing-section-rg').ready(function() {
+    // Navbar scroll behaviour
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll > 600) {
+            $(".navbar").css("opacity", "1");
+            $(".navbar").css("background", "white");
+            $(".navbar").css("border-bottom", "1px solid");
+            $(".navbar").css("border-color", "rgba(237, 237, 237, 1)");
+            $(".navbar a").css("color", "#2d2d2d");
+            $(".dropbtn").css("color", "#2d2d2d");
+            $(".dropdown-content a").css("color", "#2d2d2d");
+            $(".roundglass-logo").css("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/logo-dark.svg)");
+            $(".bar1").css("background-color", "#2d2d2d");
+            $(".bar2").css("background-color", "#2d2d2d");
+            $(".bar3").css("background-color", "#2d2d2d");
+        } 
+
+        else if (scroll < 600 && scroll >50) {
+            $(".navbar").css("opacity", "0");
+            $(".navbar").css("background", "");
+            $(".navbar").css("border-bottom", "none");
+            $(".navbar").css("border-color", "rgba(237, 237, 237, 0)");
+            $(".navbar a").css("color", "white");
+            $(".dropbtn").css("color", "white");
+            $(".dropdown-content a").css("color", "#2d2d2d");
+            $(".roundglass-logo").css("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)");
+            $(".bar1").css("background-color", "white");
+            $(".bar2").css("background-color", "white");
+            $(".bar3").css("background-color", "white");
+        } 
+
+        else {
+            $(".navbar").css("opacity", "1");
+            $(".navbar").css("background", "");
+            $(".navbar").css("border-bottom", "none");
+            $(".navbar").css("border-color", "rgba(237, 237, 237, 0)");
+            $(".navbar a").css("color", "white");
+            $(".dropbtn").css("color", "white");
+            $(".dropdown-content a").css("color", "#2d2d2d");
+            $(".roundglass-logo").css("content", "url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg)");
+            $(".bar1").css("background-color", "white");
+            $(".bar2").css("background-color", "white");
+            $(".bar3").css("background-color", "white");
+        }
+    });
+    
+    // show hamburger on mobile
+    $('.hamburger-menu').click(function(){
+        $('.menu-small-screen').css("right", "0");
+     });
+     $('.close-icon').click(function(){
+        $('.menu-small-screen').css("right", "-100%");
+     });
+     
+    // Activate slick slider in video-tile and small screen cover section
+    $('.carousel').slick({
+        speed: 600,
+        slidesToShow: 1,
+        centerPaddingLeft:'16.5%',
+        centerMode: true,
+        variableWidth: true,
+        touchThreshold: 10      
+    });  
+
+    $('.slider').slick({
+        centerMode: true,
+        centerPadding: '17%',
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 3000,
+        swipeToSlide: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        focusOnSelect: true,
+        dots: false,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 2200,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '16%',
+                    slidesToShow: 2,
+                    infinite: true
+                    
+                }
+            },
+            {
+                breakpoint: 1540,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '10%',
+                    slidesToShow: 2,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 1440,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '8%',
+                    slidesToShow: 2,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '17%',
+                    slidesToShow: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '7%',
+                    slidesToShow: 1,
+                    infinite: true
+                }
+            }
+        ]
+    });
+
+    new WOW().init();
+    $(".cover-image").paroller();
+
+    // See more chevron animation on hover
+    $('.round').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.arrow').toggleClass('bounceAlpha');
+    });
+      
+    //On page load, reveal Think breath text animation
+    $('#think-breath').css('display', 'block'); 
+    $('#think-breath-h1,#think-breath-h3').addClass('text-entry-class');
+
+    // Variables for tab functions
+    var animation_time=200;
+    var animation_time_2=300;
+    var animation_time_3=500;
+
+    // Tab-1-Think Breath click behaviour
+    $('#control-1').click( function(){
+        $("#img-1").animate({
+            opacity: '1',
+        }, { duration: animation_time_2},{specialEasing:"easeInOut"});
+
+        $("#img-2, #img-3").animate({
+            opacity: '0'
+        }, { duration: animation_time},{specialEasing:"easeInOut"});
+
+        $(".yellow-line-container").animate({
+            marginLeft:'0%'
+        }, { duration: animation_time_3},{specialEasing:"easeInOut"}); 
+
+        $('#think-breath').css('display', 'block'); 
+
+        $('.think-breath-h1,.think-breath-h3').addClass("text-entry-class");
+        $('.think-breath-h1,.think-breath-h3').removeClass("text-exit-class");
+        
+        $(".the-unshakable-h1,.forest-bathing-h1,.the-unshakable-h3, .forest-bathing-h3").removeClass('text-entry-class');
+        $(".the-unshakable-h1,.forest-bathing-h1,.the-unshakable-h3, .forest-bathing-h3").addClass('text-exit-class');
+        $('#the-unshakable, #forest-bathing')
+            .delay(490)
+            .queue(function (next) { 
+            $(this).css('display', 'none'); 
+            next(); 
+        });   
+    });
+
+    // Tab-2-The Unshakable click behaviour
+    $('#control-2').click( function(){
+        $("#img-1, #img-3").animate({
+            opacity: '0',
+        }, { duration: animation_time},{specialEasing:"easeInOut"});
+
+        $("#img-2").animate({
+            opacity: '1'
+        }, { duration: animation_time_2},{specialEasing:"easeInOut"});
+                
+        $(".yellow-line-container").animate({
+            marginLeft:'28.3%'
+        }, { duration: animation_time_3},{specialEasing:"easeInOut"}); 
+
+        $('#the-unshakable').css('display', 'block'); 
+
+        $('.the-unshakable-h1,.the-unshakable-h3').removeClass("text-exit-class");
+        $('.the-unshakable-h1,.the-unshakable-h3').addClass("text-entry-class"); 
+
+        $(".think-breath-h1, .forest-bathing-h1,.think-breath-h3, .forest-bathing-h3").removeClass('text-entry-class');
+        $(".think-breath-h1, .forest-bathing-h1,.think-breath-h3, .forest-bathing-h3").addClass('text-exit-class');
+        $('#think-breath, #forest-bathing')
+            .delay(490)
+            .queue(function (next) { 
+            $(this).css('display', 'none'); 
+            next(); 
+        });
+    });
+
+    // Tab-3-Forest Bathing click behaviour
+    $('#control-3').click( function(){
+        $("#img-1, #img-2").animate({
+            opacity: '0',
+        }, { duration: animation_time},{specialEasing:"easeInOut"});
+
+        $("#img-3").animate({
+            opacity: '1'
+        }, { duration: animation_time_2},{specialEasing:"easeInOut"});  
+
+        $(".yellow-line-container").animate({
+            marginLeft:'56.3%'
+        }, { duration: animation_time_3},{specialEasing:"easeInOut"});   
+
+        $('#forest-bathing').css('display', 'block'); 
+
+        $('.forest-bathing-h1,.forest-bathing-h3').removeClass("text-exit-class");
+        $('.forest-bathing-h1,.forest-bathing-h3').addClass("text-entry-class"); 
+
+        $(".think-breath-h1, .the-unshakable-h1,.think-breath-h3, .the-unshakable-h3").removeClass('text-entry-class');
+        $(".think-breath-h1, .the-unshakable-h1,.think-breath-h3, .the-unshakable-h3").addClass('text-exit-class');
+        $('#think-breath, #the-unshakable')
+            .delay(490)
+            .queue(function (next) { 
+            $(this).css('display', 'none'); 
+            next(); 
+        });      
+    });
+
+    jQuery(function($) {
+        var $targets = $('.accordion');
+        $targets.on('click touch', function() {
+            var $panel= $(this).next();
+            
+            
+            var $panel2= $panel.next();
+            var $panel3= $panel2.next();
+
+            var tempo = parseInt($panel3.css('max-height'));
+            console.log(tempo);
+            if (tempo){
+                $panel3.css('max-height', '0px'); 
+                $panel.css({
+                    '-moz-transform':'rotate(0deg)',
+                    '-webkit-transform':'rotate(0deg)',
+                    '-o-transform':'rotate(0deg)',
+                    '-ms-transform':'rotate(0deg)',
+                    'transform': 'rotate(0deg)',
+               });  
+            } 
+            
+            else {
+                var scrollheight = $panel3.prop('scrollHeight') + "px";
+                $panel3.css('max-height', scrollheight); 
+                $panel.css({
+                    '-moz-transform':'rotate(180deg)',
+                    '-webkit-transform':'rotate(180deg)',
+                    '-o-transform':'rotate(180deg)',
+                    '-ms-transform':'rotate(180deg)',
+                    'transform': 'rotate(180deg)',
+               });  
+            } 
+        });
+    });
+// end of Javascript
+});
+
+$('#img-1').ready(function() {
+    
+
+    setTimeout(function() {
+        $(".cover-image").addClass("zoom-animation"),
+        $(this).fadeIn(1000);
+    }, 0);
+    setTimeout(function() {
+        $(".cover-image").removeClass("zoom-animation")
+    }, 2500);
+});

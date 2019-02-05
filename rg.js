@@ -143,8 +143,12 @@ $('.landing-section-rg').ready(function() {
     });
       
     //On page load, reveal Think breath text animation
-    $('#think-breath').css('display', 'block'); 
-    $('#think-breath-h1,#think-breath-h3').addClass('text-entry-class');
+    
+    setTimeout(function() {
+        $('#think-breath').css('display', 'block'); 
+        $('#think-breath-h1,#think-breath-h3').addClass('text-entry-class');
+    }, 100);
+    
 
     // Variables for tab functions
     var animation_time=200;
@@ -273,8 +277,8 @@ $('.landing-section-rg').ready(function() {
 });
 
 $('#img-1').ready(function() {
+    $('.cover-image').addClass('visible-opacity');
     
-
     setTimeout(function() {
         $(".cover-image").addClass("zoom-animation"),
         $(this).fadeIn(1000);

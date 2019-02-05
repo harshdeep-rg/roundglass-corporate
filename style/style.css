@@ -743,6 +743,13 @@ input:active {
   border: none;
   padding: 0;
   top: 0;
+  opacity: 0;
+  transition: 1s;
+}
+
+.visible-opacity{
+  opacity: 1 ;
+  transition: 1s;
 }
 
 img {

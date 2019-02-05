@@ -241,38 +241,34 @@ $('.landing-section-rg').ready(function() {
     jQuery(function($) {
         var $targets = $('.accordion');
         $targets.on('click touch', function() {
+            console.log('something happened');
             var $panel= $(this).next();
-            
-            
             var $panel2= $panel.next();
             var $panel3= $panel2.next();
 
+            //$panel.toggleClass('active-icon');
+            
+
             var tempo = parseInt($panel3.css('max-height'));
-            console.log(tempo);
+           
             if (tempo){
                 $panel3.css('max-height', '0px'); 
-                $panel.css({
-                    '-moz-transform':'rotate(0deg)',
-                    '-webkit-transform':'rotate(0deg)',
-                    '-o-transform':'rotate(0deg)',
-                    '-ms-transform':'rotate(0deg)',
-                    'transform': 'rotate(0deg)',
-               });  
             } 
             
             else {
                 var scrollheight = $panel3.prop('scrollHeight') + "px";
                 $panel3.css('max-height', scrollheight); 
-                $panel.css({
-                    '-moz-transform':'rotate(180deg)',
-                    '-webkit-transform':'rotate(180deg)',
-                    '-o-transform':'rotate(180deg)',
-                    '-ms-transform':'rotate(180deg)',
-                    'transform': 'rotate(180deg)',
-               });  
             } 
         });
     });
+
+
+    jQuery.fn.rotate = function(degrees) {
+        $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
+                     '-moz-transform' : 'rotate('+ degrees +'deg)',
+                     '-ms-transform' : 'rotate('+ degrees +'deg)',
+                     'transform' : 'rotate('+ degrees +'deg)'});
+    };
 // end of Javascript
 });
 

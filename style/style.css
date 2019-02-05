@@ -2850,9 +2850,6 @@ hr {
   margin-top:32px; 
   padding-top: 10px;
   display: inline-block;
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
   -webkit-transition:0.5s;
   -o-transition:0.5s;
   transition:0.5s;

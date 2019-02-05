@@ -144,10 +144,12 @@ $('.landing-section-rg').ready(function() {
       
     //On page load, reveal Think breath text animation
     
+    $('.think-breath-h1,.think-breath-h3').addClass('text-exit-class');
     setTimeout(function() {
         $('#think-breath').css('display', 'block'); 
-        $('#think-breath-h1,#think-breath-h3').addClass('text-entry-class');
-    }, 100);
+        $('.think-breath-h1,.think-breath-h3').removeClass('text-exit-class');
+        $('.think-breath-h1,.think-breath-h3').addClass('text-entry-class');
+    }, 1000);
     
 
     // Variables for tab functions

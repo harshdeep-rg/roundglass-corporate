@@ -19,6 +19,7 @@
 
 .roundglass-logo{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111431/logo-light.svg);
+  cursor: pointer;
 }
 
 html {
@@ -533,6 +534,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  background-color: #000;
 }
 
 .large-screen {
@@ -1583,30 +1585,44 @@ img {
 
 .DOD-video{
   content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1548067755/tile-2-min.jpg);
+  width: 100%;
+  height: auto;
 }
 
 .Festival-video{
   content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1548067756/tile-3-min.jpg);
+  width: 100%;
+  height: auto;
 }
 
 .Mountain-video{
   content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1548067754/tile-1-min.jpg);
+  width: 100%;
+  height: auto;
 }
 
 .Pratima-video{
   content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1548067756/tile-4-min.jpg);
+  width: 100%;
+  height: auto;
 }
 
 .For-Doctors{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111038/i-1.svg);
+  width: 100%;
+  height: auto;
 }
 
 .For-Individuals{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/i-2.svg);
+  width: 100%;
+  height: auto;
 }
 
 .For-Community{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111038/i-3.svg);
+  width: 100%;
+  height: auto;
 }
 
 .illustrations {
@@ -2023,6 +2039,9 @@ hr {
 .thumbnail-frame {
   overflow: hidden;
 }
+a{
+  overflow: hidden;
+}
 
 .image-frame {
   overflow: hidden;
@@ -2055,58 +2074,88 @@ hr {
 
 .flourish-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547107533/Flourish_Tile.png);
+  width: 100%;
+  height: auto;
 }
+
 
 .WTM-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111038/e-2.png);
+  width: 100%;
+  height: auto;
 }
 
 .cooktogether-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111038/Cook_Together_Tile.png);
+  width: 100%;
+  height: auto;
 }
 
 .slumber-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111044/Slumber_Party_Tile.png);
+  width: 100%;
+  height: auto;
 }
 
 .DOD-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111038/e-1.png);
+  width: 100%;
+  height: auto;
 }
+
 
 .Livingwake-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111046/Living_Wake_Tile.png);
+  width: 100%;
+  height: auto;
 }
 
 .MV-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111042/Model_Village_Tile.png);
+  width: 100%;
+  height: auto;
 }
 
 .MC-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111041/Model_City_Tile.png);
+  width: 100%;
+  height: auto;
 }
 
 .Fellows-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111038/Fellows_Tile.png);
+  width: 100%;
+  height: auto;
 }
 
 .Rise-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111042/Rise_Tile.png);
+  width: 100%;
+  height: auto;
 }
 
 .Samsara-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111044/Samsara_Tile.png);
+  width: 100%;
+  height: auto;
 }
 
 .Wildly-tile{
   content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1547633261/wildly-tile.png);
+  width: 100%;
+  height: auto;
 }
 
 .Sports-tile{
   content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111044/Sports_Tile.png);
+  width: 100%;
+  height: auto;
 }
 
 .Journeys-tile{
   content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1547633904/journeys-tile-min.png);
+  width: 100%;
+  height: auto;
 }
 
 .thumbnail-frame {
@@ -2118,9 +2167,10 @@ hr {
           transition-timing-function: cubic-bezier(.694,0,.335,1);
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 
-.thumbnail-frame img {
+.thumbnail-frame a {
   -webkit-transition: all 0.8s;
   -o-transition: all 0.8s;
   transition: all 0.8s;
@@ -2128,20 +2178,16 @@ hr {
        -o-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
   position: relative;
+  overflow: hidden;
+  margin-bottom: -4px;
 }
 
-.thumbnail-frame:hover img {
+.thumbnail-frame:hover a {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
       transform: scale(1.05);
+      overflow: hidden;
 }
-
-/*
-.thumbnail-frame:hover {
-  -webkit-transform: scale(0.99);
-  -ms-transform: scale(0.99);
-      transform: scale(0.99);
-} */
 
 .heading-hr {
   width: 100%;
@@ -2179,7 +2225,6 @@ hr {
   list-style: none;
   margin-right: 0px 0px 0px auto !important;
   margin-left: auto;
-  
 }
 
 .footer-list li a {
@@ -2215,6 +2260,7 @@ hr {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
+  padding-left: 15px;
 }
 
 .facebook-icon{
@@ -2251,7 +2297,7 @@ hr {
   margin-right: 64px;
 }
 
-.social-icons img {
+.social-icons a {
   padding-right: 32px;
   height: 36px;
   cursor: pointer;
@@ -2743,7 +2789,7 @@ hr {
 }
 
 .play-icon {
-  content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547118341/play.svg);
+  content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549444832/play-icon.png);
   position: absolute;
   left: 0; 
   right: 0; 
@@ -2935,14 +2981,14 @@ hr {
   align-items: center;
 }
 
-.social-icons-menu img{
+.social-icons-menu a{
   padding-left: 16px;
   padding-right: 16px;
   height:32px;margin-top: 32px;
 }
 
 .rg-2019{
-  font-family: Gibson;
+  font-family: canada-type-gibson, sans-serif;
   font-size: 12px;
   font-weight: 300;
   font-style: normal;

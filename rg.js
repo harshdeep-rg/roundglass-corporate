@@ -252,9 +252,6 @@ $('.landing-section-rg').ready(function() {
             var $panel2= $panel.next();
             var $panel3= $panel2.next();
 
-            //$panel.toggleClass('active-icon');
-            
-
             var tempo = parseInt($panel3.css('max-height'));
            
             if (tempo){
@@ -265,7 +262,10 @@ $('.landing-section-rg').ready(function() {
                 var scrollheight = $panel3.prop('scrollHeight') + "px";
                 $panel3.css('max-height', scrollheight); 
             } 
+
+            //$panel.toggleClass('active-icon');
         });
+
     });
 
 

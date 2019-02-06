@@ -262,9 +262,11 @@ $('.landing-section-rg').ready(function() {
                 var scrollheight = $panel3.prop('scrollHeight') + "px";
                 $panel3.css('max-height', scrollheight); 
             } 
-
-            $panel.toggleClass('active-icon');
+            //$panel.toggleClass('active-icon');
         });
+        
+
+
 
     });
 
@@ -281,10 +283,10 @@ $('.landing-section-rg').ready(function() {
 $('#img-1').ready(function() {
     $('.cover-image').addClass('visible-opacity');
     
-    setTimeout(function() {
+    
         $(".cover-image").addClass("zoom-animation"),
         $(this).fadeIn(1000);
-    }, 0);
+    
     setTimeout(function() {
         $(".cover-image").removeClass("zoom-animation")
     }, 2500);

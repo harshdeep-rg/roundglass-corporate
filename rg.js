@@ -263,7 +263,7 @@ $('.landing-section-rg').ready(function() {
                 $panel3.css('max-height', scrollheight); 
             } 
 
-            //$panel.toggleClass('active-icon');
+            $panel.toggleClass('active-icon');
         });
 
     });

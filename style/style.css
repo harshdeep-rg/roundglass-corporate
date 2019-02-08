@@ -87,6 +87,7 @@ h2 {
     width: 90%;
   }
 }
+
 .h3-cover {
   font-family: canada-type-gibson,sans-serif;
   font-weight: 400;
@@ -677,8 +678,22 @@ a.animated-button.thar-three {
 }
 
 a.animated-button.thar-three:hover {
-  color: #2d2d2d !important;
+  color: #2d2d2d ;
   background-color: transparent;
+}
+
+@media(max-width:1024px){
+  a.animated-button.thar-three:hover {
+    color: white ;
+    background-color: transparent;
+  }
+}
+
+@media(max-height:600px){
+  a.animated-button.thar-three:hover {
+    color: white ;
+    background-color: transparent;
+  }
 }
 
 a.animated-button.thar-three:hover:before {
@@ -2483,11 +2498,12 @@ a{
 
 .dropdown {
   display: inline-block;
-  height: 40px;
   overflow: visible;
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  top: -3px;
+  height: 40px;
 }
 
 .dropbtn {
@@ -2886,7 +2902,7 @@ a{
 
 .accordion{
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
@@ -2898,22 +2914,19 @@ a{
   margin-top:32px; 
 }
 
-.expand-icon{
+.accordion:after{
+  content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1548660850/expand-icon.svg);
   float: right;
-  margin-top:32px; 
-  padding-top: 10px;
-  display: inline-block;
   -webkit-transition:0.5s;
   -o-transition:0.5s;
   transition:0.5s;
-  content: url('https://res.cloudinary.com/dvq2wjj33/image/upload/v1548660850/expand-icon.svg')
 }
 
-.active-icon{
+.special:after{
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  padding-bottom: 8px;
+  
   -webkit-transition:0.5s;
   -o-transition:0.5s;
   transition:0.5s;

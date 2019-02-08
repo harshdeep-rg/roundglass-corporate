@@ -1,0 +1,314 @@
+.always-white{
+    background: white !important;
+    border-bottom: 1px solid rgb(237, 237, 237) !important;
+    opacity: 1 !important;
+}
+
+.always-white .roundglass-logo{
+    content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/logo-dark.svg) !important;
+}
+
+.always-white .dropbtn{
+    color: #2d2d2d !important;
+}
+
+.always-white .nav-content-right > a{
+    color: #2d2d2d !important;
+}
+
+.article-details{
+    margin-top: 80px;
+
+}
+
+.article-details h1{
+    color: black;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.article-cover-image{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+    margin-top: 48px;
+    opacity: 1 !important;
+}
+
+.article-content{
+    position: absolute;
+    transform: translateY(-120px);
+    
+}
+
+.article-content .h3-cover{
+    font-weight: 300;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+}
+
+.white-background{
+    background-color: white;
+    padding-top: 64px;
+    margin-top: 32px;
+}
+
+.article-body-text{
+  font-family: PTSerif-Caption;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  color: #2d2d2d;
+  margin-bottom: 0px;
+}
+
+.dropcap:first-letter{
+    color: #e26463;
+  float: left;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: 0.1px;
+  padding-top: 4px;
+  padding-right: 28px;
+  padding-left: 28px;
+}
+
+.article-content .phrase-1{
+    line-height: 1.5;
+    margin-top: 40px;
+    letter-spacing: -0.1px;
+    color: #777777 !important;
+}
+.article-content .phrase-1:after{
+    content: '';
+}
+
+.article-content hr{
+    margin-top: 40px;
+}
+
+.article-content h4{
+  margin-top: 60px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  color: #2d2d2d;
+  margin-bottom: 24px;
+}
+
+.article-image-mega, .athlete-image{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+    margin-top: 48px;
+}
+
+#athlete-pic{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549537048/img-7-min.jpg);
+}
+
+#athlete-image-3{
+    margin-top: 60px;
+    content:url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549540522/img-1-min.jpg); 
+}
+
+#athlete-image-4{
+    margin-top: 60px;
+    content:url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549540575/ab-image-5-min.jpg); 
+}
+
+#athlete-pic-2{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549540525/ab-image-1-min.jpg);
+}
+
+.article-author{
+    display: inline-block;
+}
+
+.article-author p{
+    font-family: canada-type-gibson, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    color: #777777;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.article-author a h4{
+    margin-top: 2px;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.share-this-story{
+    display: inline-block;
+    float: right;
+
+}
+
+.share-this-story p{
+    font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 0px;
+}
+
+.share-this-story .subsection-header{
+    display: inline-block;
+    margin-top: 28px;
+    padding-top: 2px;
+}
+
+.share-via{
+    list-style: none;
+    display: inline-block;
+    float: right;
+    margin-top: 28px;
+    vertical-align: middle;
+}
+
+.share-via li{
+    display: inline-block;
+    padding-left:30px;
+    padding-right: 30px; 
+    cursor: pointer;
+}
+
+.via-facebook{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549607904/facebook.svg);
+}
+
+.via-twitter{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549607904/twitter.svg);
+}
+
+.via-link{
+    padding-bottom: 2px;
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549607904/copy-to-clipboard.svg);
+}
+
+.share-article-bottom-line{
+    margin-top: 24px !important;
+}
+
+.tagged-in{
+  font-family: canada-type-gibson, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  color: #777777;
+  margin-top: 48px;
+  padding-top: 8px;
+  display: inline-block;
+}
+
+.tags{
+    display: inline-block;
+    list-style: none;
+    padding-left: 16px;
+}
+
+.tags li{
+    display: inline-block;
+    padding: 13px 16px;
+    background-color: rgba(238, 228, 119, 0.56);
+    margin-right: 24px;
+}
+
+.tags li a{
+  font-family: canada-type-gibson, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 1.6px;
+  text-align: center;
+}
+
+.next-article{
+    position: relative;
+    margin-top: 48px;
+    background-color: #fafafa;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.previous, .next
+{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.next{
+    float: right;
+}
+
+.previous h5, .next h5{
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.previous h4, .next h4{
+    margin-top: 20px;
+    display: inline-block;
+    font-weight:normal;
+    color: #2d2d2d; 
+}
+
+.prev-article-link, .next-article-link{
+    display: inline-block;
+}
+
+.prev-article-icon{
+    padding-right: 36px;
+    display: block;
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549610660/previous.png);
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+.next-article-icon{
+    padding-left: 36px;
+    display: block;
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549610660/next.png);
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+
+.footer{
+    position: relative;bottom:0px;
+}

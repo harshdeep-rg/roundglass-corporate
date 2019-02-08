@@ -246,35 +246,31 @@ $('.landing-section-rg').ready(function() {
 
     jQuery(function($) {
         var $targets = $('.accordion');
-        $targets.on('click touch', function() {
+        $targets.on('click tap', function() {
             console.log('something happened');
             var $panel= $(this).next();
             var $panel2= $panel.next();
-            var $panel3= $panel2.next();
+           
 
-            var tempo = parseInt($panel3.css('max-height'));
+            var tempo = parseInt($panel2.css('max-height'));
            
             if (tempo){
-                $panel3.css('max-height', '0px'); 
+                $panel2.css('max-height', '0px'); 
             } 
             
             else {
-                var scrollheight = $panel3.prop('scrollHeight') + "px";
-                $panel3.css('max-height', scrollheight); 
+                var scrollheight = $panel2.prop('scrollHeight') + "px";
+                $panel2.css('max-height', scrollheight); 
             } 
 
-            //$panel.toggleClass('active-icon');
+            $(this).toggleClass('special');
+
+     
+
         });
 
     });
 
-
-    jQuery.fn.rotate = function(degrees) {
-        $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
-                     '-moz-transform' : 'rotate('+ degrees +'deg)',
-                     '-ms-transform' : 'rotate('+ degrees +'deg)',
-                     'transform' : 'rotate('+ degrees +'deg)'});
-    };
 // end of Javascript
 });
 

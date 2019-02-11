@@ -1,3 +1,4 @@
+/* THE UNSHAKABLE PAGE CSS */
 .always-white{
     background: white !important;
     border-bottom: 1px solid rgb(237, 237, 237) !important;
@@ -39,6 +40,7 @@
     margin-top: 48px;
     opacity: 1 !important;
 }
+
 
 .article-content{
     position: absolute;
@@ -450,4 +452,212 @@
     background: #e26463;;
     width: 0%;
     
+  }
+
+
+/* ABOUT US PAGE CSS */
+.about-us-cover-section{
+    padding-top: 144px;
+    padding-bottom: 160px;
+    background-color: #f9f9f9;
+}
+.about-us-image{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549626216/about-us-illustration.svg);
+    margin: 0 auto;
+}
+
+.mark-twain-quote{
+    position: relative;
+}
+
+.move-up{
+    position: absolute;
+    transform: translateY(-150px);
+    left: 0;
+    right: 0;
+}
+
+
+
+.mark-twain-quote .phrase-1{
+    font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #2d2d2d;
+}
+
+.mark-twain-quote .phrase-1:after{
+    content: url();
+}
+
+.mark-twain-quote .phrase-1:first-letter{
+color: #e26463;
+  float: left;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: 0.1px;
+  padding-top: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.mark-twain-quote .white-background{
+    box-shadow: 0 -2px 24px 0 rgba(224, 224, 224, 0.5);
+}
+
+@media (max-width:768px){
+    .mark-twain-quote .white-background{
+        box-shadow: none;
+        width: 100vw;
+    }
+
+    .move-up{
+        transform: translateY(0px);
+    }
+
+    .about-us-cover-section{
+        padding-bottom: 64px;
+    }
+    
+}
+
+.mark-twain-quote h5{
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 4.8px;
+  text-align: center;
+  color: #777777;
+  font-size: 0.875rem;
+}
+
+.white-overlay-div{
+    background-color: white;
+    z-index: 2;
+}
+
+.white-overlay-div hr{
+    margin-top: 64px;
+} 
+
+.about-us-copy{
+  font-family: PTSerif-Caption;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  color: #2d2d2d;
+  margin-top: 40px;
+}
+
+.about-us-content{
+    margin-top: 40px;
+}
+
+.about-us-live{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549629047/3-col-tile-min.jpg);
+}
+
+.about-us-give{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549868663/give-tile-min.jpg);
+}
+
+.about-us-sustain{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549868663/sustain-tile-copy-min.jpg);
+}
+
+.about-us-pillar{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.hide-overflow{
+    overflow: hidden;
+}
+
+.bottom-left{
+  position: absolute;
+  bottom: 32px;
+  left: 48px;
+  color: white;
+}
+
+@media(max-width:840px){
+    .bottom-left{
+        position: absolute;
+        bottom: 28px;
+        left: 32px;
+        color: white;
+    }
+      
+}
+
+@media(max-width:768px){
+    .bottom-left{
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        color: white;
+    }     
+}
+
+.pillar-text-about-us{
+    font-family: PTSerif-Caption;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+
+  .wellbeing-of{
+    font-family: canada-type-gibson, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 4px;
+  }
+
+  .about-us-pillars-large-screen{
+      margin-top: 48px;
+  }
+
+  .pillar-container{
+      position: relative;
+  }
+
+  @media(max-width:767px){
+    .about-us-pillars-large-screen{
+        max-width: 44%;
+        margin-top: 12px;
+        margin-right: 12px;
+        display: inline-block;
+    }
+  }
+
+  .join-us{
+      background-color: #fafafa;
+      margin-top: 64px;
+      padding-bottom: 64px;
+  }
+
+  .join-us p{
+    width: 80%;
   }

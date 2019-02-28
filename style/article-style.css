@@ -1,26 +1,23 @@
 /* THE UNSHAKABLE PAGE CSS */
-.always-white{
+.article-navbar{
     background: white !important;
     border-bottom: 1px solid rgb(237, 237, 237) !important;
     opacity: 1 !important;
+    position: relative !important;
 }
 
-.always-white .roundglass-logo{
+.article-navbar .roundglass-logo{
     content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/logo-dark.svg) !important;
 }
 
-.always-white .dropbtn{
+.article-navbar .dropbtn{
     color: #2d2d2d !important;
 }
 
-.always-white .nav-content-right > a{
+.article-navbar .nav-content-right > a{
     color: #2d2d2d !important;
 }
 
-.article-details{
-    margin-top: 80px;
-
-}
 
 .article-details h1{
     color: black;
@@ -442,13 +439,13 @@
 
 .progress-container{
     position: absolute;
-    top: 0px;
+    bottom: 0px;
     width: 100%;
     height: 2px;
 }
 
 .progress-bar {
-    height: 2px;
+    height: 3px;
     background: #e26463;;
     width: 0%;
     
@@ -660,4 +657,88 @@ color: #e26463;
 
   .join-us p{
     width: 80%;
+  }
+
+  .article-content .phrase-1{
+    cursor: auto !important;
+  }
+
+  /* ARTICLE PAGE CONTEXTUAL NAVBAR CSS */
+
+  .article-contextual-navbar{
+    background: white !important;
+    border-bottom: 1px solid rgb(237, 237, 237) !important;
+    opacity: 1 !important;
+    position: fixed !important;
+    top: -200px !important;
+    z-index: 4;
+    -webkit-transition: 0.4s !important;
+    -o-transition: 0.4s !important;
+    transition: 0.4s !important;
+  }
+
+  .rg-logo-condensed{
+      content: url('https://res.cloudinary.com/dvq2wjj33/image/upload/v1551268824/rg-logo-short.svg');
+      padding: 32px;
+      padding-left: 0px;
+      display: inline-block;
+      float: left;
+  }
+
+  .navbar-article-name{
+    font-family: PTSerif-Caption;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+    color: #2d2d2d;
+    display: inline-block;
+    margin: 0px;
+    padding: 32px;
+    padding-left: 0px;
+  }
+
+  .navbar-article-name:before{
+    border-left: 2px solid;  
+    content: url();
+    padding-right: 32px;
+    color: rgb(237, 237, 237) !important;
+  }
+
+  .article-contextual-navbar .share-this-story .subsection-header{
+      margin: 0px;
+      padding: 38px;
+  }
+
+  .article-contextual-navbar .share-via{
+    margin: 0px;
+    padding: 38px;
+    padding-right: 0px;
+}
+
+@media(max-width:480px){
+    .rg-logo-condensed{
+        padding: 24px;
+        padding-right: 16px;
+        padding-left: 0px;
+    }
+
+    .navbar-article-name:before{
+        padding-right: 16px;
+    }
+
+    .navbar-article-name{
+        padding: 24px;
+        padding-left: 0px;
+        font-size: 1.125rem;
+    }
+}
+.navbar-hidden{
+    top: -100px !important;
+  }
+  
+  .navbar-visible{
+    top: 0px !important;
   }

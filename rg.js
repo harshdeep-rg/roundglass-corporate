@@ -143,7 +143,6 @@ $('.landing-section-rg').ready(function() {
     });
       
     //On page load, reveal Think breath text animation
-    
     $('.think-breath-h1,.think-breath-h3').addClass('text-exit-class');
     setTimeout(function() {
         $('#think-breath').css('display', 'block'); 
@@ -184,6 +183,17 @@ $('.landing-section-rg').ready(function() {
             $(this).css('display', 'none'); 
             next(); 
         });   
+
+        // Disable click event for 1 second on other article tabs
+        $('#control-2').css("pointer-events", "none");
+        $('#control-3').css("pointer-events", "none");
+        setTimeout(function(){
+            $('#control-2').css("pointer-events", "auto");
+            $('#control-3').css("pointer-events", "auto");
+        },1500);
+
+        // Disable autoplay on click
+        clearInterval(myVar);
     });
 
     // Tab-2-The Unshakable click behaviour
@@ -213,6 +223,17 @@ $('.landing-section-rg').ready(function() {
             $(this).css('display', 'none'); 
             next(); 
         });
+
+        // Disable click event for 1 second on other article tabs
+        $('#control-1').css("pointer-events", "none");
+        $('#control-3').css("pointer-events", "none");
+        setTimeout(function(){
+            $('#control-1').css("pointer-events", "auto");
+            $('#control-3').css("pointer-events", "auto");
+        },1500); 
+
+        // Disable autoplay on click
+        clearInterval(myVar);
     });
 
     // Tab-3-Forest Bathing click behaviour
@@ -241,12 +262,23 @@ $('.landing-section-rg').ready(function() {
             .queue(function (next) { 
             $(this).css('display', 'none'); 
             next(); 
-        });      
+        });   
+        
+        // Disable click event for 1 second on other article tabs
+        $('#control-2').css("pointer-events", "none");
+        $('#control-1').css("pointer-events", "none");
+        setTimeout(function(){
+            $('#control-2').css("pointer-events", "auto");
+            $('#control-1').css("pointer-events", "auto");
+        },1500); 
+
+        // Disable autoplay on click
+        clearInterval(myVar);
     });
 
     jQuery(function($) {
         var $targets = $('.accordion');
-        $targets.on('click tap', function() {
+        $targets.on('touchstart click tap', function() {
             console.log('something happened');
             var $panel= $(this).next();
             var $panel2= $panel.next();
@@ -262,16 +294,33 @@ $('.landing-section-rg').ready(function() {
                 var scrollheight = $panel2.prop('scrollHeight') + "px";
                 $panel2.css('max-height', scrollheight); 
             } 
-
-            $(this).toggleClass('special');
-
-     
-
         });
 
     });
 
+    // autoplay function for cover section in desktop
+    function myTimer() {
+        var margLeft = parseInt($(".yellow-line-container").css("margin-left")); 
+        var parentwidth = parseInt($(".indicator").css("width")); 
+
+        var inperc = (margLeft*100)/parentwidth;
+
+        if(inperc == 0){
+            $('#control-2').trigger("click");
+        }
+
+       else if(inperc > 0 && inperc <56){
+            $('#control-3').trigger("click");
+        }
+
+        else{
+            $('#control-1').trigger("click");
+        }
+    }
+    var myVar = setInterval(myTimer, 5000);
+
 // end of Javascript
+
 });
 
 $('#img-1').ready(function() {
@@ -285,3 +334,5 @@ $('#img-1').ready(function() {
         $(".cover-image").removeClass("zoom-animation")
     }, 2500);
 });
+
+

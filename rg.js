@@ -151,7 +151,7 @@ $('.landing-section-rg').ready(function() {
     }, 1000);
     
     // autoplay function for cover section in desktop
-    var myVar, myVar1, myVar2, myVar3; 
+    var myVar;
     function myTimer() {
         var margLeft = parseInt($(".yellow-line-container").css("margin-left")); 
         var parentwidth = parseInt($(".indicator").css("width")); 
@@ -178,7 +178,7 @@ $('.landing-section-rg').ready(function() {
     var animation_time_3=500;
 
     // Tab-1-Think Breath click behaviour
-    $('#control-1').click( function(){
+    $('#control-1').click( function(event){
         $("#img-1").animate({
             opacity: '1',
         }, { duration: animation_time_2},{specialEasing:"easeInOut"});
@@ -213,10 +213,11 @@ $('.landing-section-rg').ready(function() {
             $('#control-3').css("pointer-events", "auto");
         },1500);
 
-        clearInterval(myVar);
-        clearInterval(myVar2);
-        clearInterval(myVar3);
-        myVar1 = setInterval(myTimer, 5000);
+        // Disbale autoplay on physical mouse click
+        if (!event.isTrigger) {
+            clearInterval(myVar);
+            console.log('wtf bro');
+        }
 
     });
 
@@ -256,10 +257,11 @@ $('.landing-section-rg').ready(function() {
             $('#control-3').css("pointer-events", "auto");
         },1500); 
 
-        clearInterval(myVar);
-        clearInterval(myVar1);
-        clearInterval(myVar3);
-         myVar2 = setInterval(myTimer, 5000);
+        // Disbale autoplay on physical mouse click
+        if (!event.isTrigger) {
+            clearInterval(myVar);
+            console.log('wtf bro');
+        }
 
     });
 
@@ -299,10 +301,11 @@ $('.landing-section-rg').ready(function() {
             $('#control-1').css("pointer-events", "auto");
         },1500); 
 
-        clearInterval(myVar);
-        clearInterval(myVar2);
-        clearInterval(myVar1);
-        myVar3 = setInterval(myTimer, 5000);
+        // Disbale autoplay on physical mouse click
+        if (!event.isTrigger) {
+            clearInterval(myVar);
+            console.log('wtf bro');
+        }
     });
 
     jQuery(function($) {

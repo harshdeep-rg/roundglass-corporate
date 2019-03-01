@@ -216,7 +216,6 @@ $('.landing-section-rg').ready(function() {
         // Disbale autoplay on physical mouse click
         if (!event.isTrigger) {
             clearInterval(myVar);
-            console.log('wtf bro');
         }
 
     });
@@ -260,7 +259,6 @@ $('.landing-section-rg').ready(function() {
         // Disbale autoplay on physical mouse click
         if (!event.isTrigger) {
             clearInterval(myVar);
-            console.log('wtf bro');
         }
 
     });
@@ -304,7 +302,6 @@ $('.landing-section-rg').ready(function() {
         // Disbale autoplay on physical mouse click
         if (!event.isTrigger) {
             clearInterval(myVar);
-            console.log('wtf bro');
         }
     });
 

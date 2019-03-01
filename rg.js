@@ -150,6 +150,27 @@ $('.landing-section-rg').ready(function() {
         $('.think-breath-h1,.think-breath-h3').addClass('text-entry-class');
     }, 1000);
     
+    // autoplay function for cover section in desktop
+    var myVar, myVar1, myVar2, myVar3; 
+    function myTimer() {
+        var margLeft = parseInt($(".yellow-line-container").css("margin-left")); 
+        var parentwidth = parseInt($(".indicator").css("width")); 
+
+        var inperc = (margLeft*100)/parentwidth;
+
+        if(inperc == 0){
+            $('#control-2').trigger("click");
+        }
+
+        else if(inperc > 0 && inperc <56){
+            $('#control-3').trigger("click");
+        }
+
+        else{
+            $('#control-1').trigger("click");
+        }
+    }
+    myVar = setInterval(myTimer, 5000);
 
     // Variables for tab functions
     var animation_time=200;
@@ -192,8 +213,11 @@ $('.landing-section-rg').ready(function() {
             $('#control-3').css("pointer-events", "auto");
         },1500);
 
-        // Disable autoplay on click
         clearInterval(myVar);
+        clearInterval(myVar2);
+        clearInterval(myVar3);
+        myVar1 = setInterval(myTimer, 5000);
+
     });
 
     // Tab-2-The Unshakable click behaviour
@@ -232,8 +256,11 @@ $('.landing-section-rg').ready(function() {
             $('#control-3').css("pointer-events", "auto");
         },1500); 
 
-        // Disable autoplay on click
         clearInterval(myVar);
+        clearInterval(myVar1);
+        clearInterval(myVar3);
+         myVar2 = setInterval(myTimer, 5000);
+
     });
 
     // Tab-3-Forest Bathing click behaviour
@@ -272,8 +299,10 @@ $('.landing-section-rg').ready(function() {
             $('#control-1').css("pointer-events", "auto");
         },1500); 
 
-        // Disable autoplay on click
         clearInterval(myVar);
+        clearInterval(myVar2);
+        clearInterval(myVar1);
+        myVar3 = setInterval(myTimer, 5000);
     });
 
     jQuery(function($) {
@@ -297,27 +326,6 @@ $('.landing-section-rg').ready(function() {
         });
 
     });
-
-    // autoplay function for cover section in desktop
-    function myTimer() {
-        var margLeft = parseInt($(".yellow-line-container").css("margin-left")); 
-        var parentwidth = parseInt($(".indicator").css("width")); 
-
-        var inperc = (margLeft*100)/parentwidth;
-
-        if(inperc == 0){
-            $('#control-2').trigger("click");
-        }
-
-       else if(inperc > 0 && inperc <56){
-            $('#control-3').trigger("click");
-        }
-
-        else{
-            $('#control-1').trigger("click");
-        }
-    }
-    var myVar = setInterval(myTimer, 5000);
 
 // end of Javascript
 

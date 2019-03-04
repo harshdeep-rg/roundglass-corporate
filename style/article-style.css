@@ -6,15 +6,21 @@
     position: relative !important;
 }
 
-.article-navbar .roundglass-logo{
+.about-us-page-navbar{
+    background: white !important;
+    border-bottom: 1px solid rgb(237, 237, 237) !important;
+    opacity: 1 !important;
+}
+
+.article-navbar .roundglass-logo, .about-us-page-navbar .roundglass-logo{
     content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/logo-dark.svg) !important;
 }
 
-.article-navbar .dropbtn{
+.article-navbar .dropbtn, .about-us-page-navbar .dropbtn{
     color: #2d2d2d !important;
 }
 
-.article-navbar .nav-content-right > a{
+.article-navbar .nav-content-right > a, .about-us-page-navbar .nav-content-right > a{
     color: #2d2d2d !important;
 }
 
@@ -454,8 +460,8 @@
 
 /* ABOUT US PAGE CSS */
 .about-us-cover-section{
-    padding-top: 144px;
-    padding-bottom: 160px;
+    padding-top: 108px;
+    padding-bottom: 96px;
     background-color: #f9f9f9;
 }
 .about-us-image{
@@ -463,8 +469,16 @@
     margin: 0 auto;
 }
 
+@media(max-width:768px){
+    .about-us-image{
+        max-width: 70%;
+        margin-top: 64px;
+    }
+}
+
 .mark-twain-quote{
     position: relative;
+    margin-top: 56px;
 }
 
 .move-up{
@@ -483,21 +497,25 @@
   line-height: 1.5;
   letter-spacing: 0.1px;
   color: #2d2d2d;
+  margin-bottom: 32px
+  margin-top: 20px;
+  
 }
 
 .mark-twain-quote .phrase-1:after{
     content: url();
+    display: inline-block;
 }
 
 .mark-twain-quote .phrase-1:first-letter{
 color: #e26463;
   float: left;
   font-size: 96px;
-  line-height: 1;
+  line-height: 0.8;
   letter-spacing: 0.1px;
   padding-top: 4px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .mark-twain-quote .white-background{
@@ -521,10 +539,7 @@ color: #e26463;
 }
 
 .mark-twain-quote h5{
-    background-color: white;
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
+  font-weight: 600;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.43;
@@ -532,6 +547,10 @@ color: #e26463;
   text-align: center;
   color: #777777;
   font-size: 0.875rem;
+  margin-top: 0px !important;
+  display: inline-block;
+  margin-top: 32px;
+  text-align: left;
 }
 
 .white-overlay-div{
@@ -553,6 +572,7 @@ color: #e26463;
   letter-spacing: 0.2px;
   color: #2d2d2d;
   margin-top: 40px;
+  max-width:87% ;
 }
 
 .about-us-content{
@@ -560,17 +580,26 @@ color: #e26463;
 }
 
 .about-us-live{
-    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549629047/3-col-tile-min.jpg);
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1551689842/3-col-tile.jpg);
 }
 
 .about-us-give{
-    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549868663/give-tile-min.jpg);
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1551691064/give-tile.jpg);
 }
 
 .about-us-sustain{
-    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549868663/sustain-tile-copy-min.jpg);
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1551691273/sustain-tile-copy.jpg);
 }
 
+.about-us-live:before {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .6; 
+    z-index: 10;
+  }
 .about-us-pillar{
     width: 100%;
     height: auto;
@@ -650,7 +679,6 @@ color: #e26463;
   }
 
   .join-us{
-      background-color: #fafafa;
       margin-top: 64px;
       padding-bottom: 64px;
   }
@@ -741,4 +769,16 @@ color: #e26463;
   
   .navbar-visible{
     top: 0px !important;
+  }
+
+
+
+
+
+
+
+
+
+  .about-us-page-navbar{
+      background: white !important;
   }

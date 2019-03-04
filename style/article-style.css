@@ -467,12 +467,14 @@
 .about-us-image{
     content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549626216/about-us-illustration.svg);
     margin: 0 auto;
+    float: right;
 }
 
 @media(max-width:768px){
     .about-us-image{
         max-width: 70%;
         margin-top: 64px;
+        float: none;
     }
 }
 
@@ -497,8 +499,10 @@
   line-height: 1.5;
   letter-spacing: 0.1px;
   color: #2d2d2d;
-  margin-bottom: 32px
+  margin-bottom: 32px;
   margin-top: 20px;
+  max-width: 96%;
+
   
 }
 

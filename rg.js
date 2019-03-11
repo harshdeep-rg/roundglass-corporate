@@ -307,7 +307,7 @@ $('.landing-section-rg').ready(function() {
 
     jQuery(function($) {
         var $targets = $('.accordion');
-        $targets.on('click tap', function() {
+        $targets.on('tap', function() {
             console.log('something happened');
             console.log('microphone check 123');
             var $panel= $(this).next();

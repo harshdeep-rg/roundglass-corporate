@@ -307,7 +307,7 @@ $('.landing-section-rg').ready(function() {
 
     jQuery(function($) {
         var $targets = $('.accordion');
-        $targets.on('touchstart click tap', function() {
+        $targets.on('click tap', function() {
             console.log('something happened');
             var $panel= $(this).next();
             var $panel2= $panel.next();

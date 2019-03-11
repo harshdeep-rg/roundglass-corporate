@@ -87,11 +87,12 @@ h2 {
     width: 90%;
   }
 }
+
 .h3-cover {
   font-family: canada-type-gibson,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: white !important;
+  color: white;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -613,6 +614,10 @@ body {
   overflow: hidden;
 }
 
+.article-h3 > h3{
+  color: white !important;
+}
+
 .article-rg h1 {
   margin-top: 0px;
 }
@@ -629,6 +634,10 @@ body {
   top: 55%;
   display: none;
   z-index: 1;
+}
+
+.article-heading-descrptiom > h3{
+  color: white !important;
 }
 
 @media (max-height: 1199px) {
@@ -677,8 +686,22 @@ a.animated-button.thar-three {
 }
 
 a.animated-button.thar-three:hover {
-  color: #2d2d2d !important;
+  color: #2d2d2d ;
   background-color: transparent;
+}
+
+@media(max-width:1024px){
+  a.animated-button.thar-three:hover {
+    color: white ;
+    background-color: transparent;
+  }
+}
+
+@media(max-height:600px){
+  a.animated-button.thar-three:hover {
+    color: white ;
+    background-color: transparent;
+  }
 }
 
 a.animated-button.thar-three:hover:before {
@@ -2308,7 +2331,7 @@ a{
   transition: 0.5s ease;
 }
 
-.social-icons img:hover {
+.social-icons a:hover {
   opacity: 0.6;
 }
 
@@ -2483,11 +2506,12 @@ a{
 
 .dropdown {
   display: inline-block;
-  height: 40px;
   overflow: visible;
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  top: -3px;
+  height: 40px;
 }
 
 .dropbtn {
@@ -2886,7 +2910,7 @@ a{
 
 .accordion{
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
@@ -2898,22 +2922,19 @@ a{
   margin-top:32px; 
 }
 
-.expand-icon{
+.accordion:after{
+  content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1548660850/expand-icon.svg);
   float: right;
-  margin-top:32px; 
-  padding-top: 10px;
-  display: inline-block;
   -webkit-transition:0.5s;
   -o-transition:0.5s;
   transition:0.5s;
-  content: url('https://res.cloudinary.com/dvq2wjj33/image/upload/v1548660850/expand-icon.svg')
 }
 
-.active-icon{
+.special:after{
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  padding-bottom: 8px;
+  
   -webkit-transition:0.5s;
   -o-transition:0.5s;
   transition:0.5s;

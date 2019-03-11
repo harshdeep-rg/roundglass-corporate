@@ -1,0 +1,788 @@
+/* THE UNSHAKABLE PAGE CSS */
+.article-navbar{
+    background: white !important;
+    border-bottom: 1px solid rgb(237, 237, 237) !important;
+    opacity: 1 !important;
+    position: relative !important;
+}
+
+.about-us-page-navbar{
+    background: white !important;
+    border-bottom: 1px solid rgb(237, 237, 237) !important;
+    opacity: 1 !important;
+}
+
+.article-navbar .roundglass-logo, .about-us-page-navbar .roundglass-logo{
+    content: url(https://res.cloudinary.com/rgcorporate/image/upload/v1547111040/logo-dark.svg) !important;
+}
+
+.article-navbar .dropbtn, .about-us-page-navbar .dropbtn{
+    color: #2d2d2d !important;
+}
+
+.article-navbar .nav-content-right > a, .about-us-page-navbar .nav-content-right > a{
+    color: #2d2d2d !important;
+}
+
+
+.article-details h1{
+    color: black;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.article-cover-image{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+    margin-top: 48px;
+    opacity: 1 !important;
+}
+
+
+.article-content{
+    position: absolute;
+    transform: translateY(-120px);
+    width: 100%; 
+}
+
+@media(max-width:768px){
+    .article-content{
+        transform: translateY(0px);
+    } 
+
+    .article-content .h3-cover{
+        color: #2d2d2d;
+       padding-top: 20px;
+    } 
+
+    .white-background{
+        padding-top: 20px !important;
+    }
+
+    .article-cover-image{
+        height: 70vh;
+    }
+}
+
+.article-content .h3-cover{
+    font-weight: 300;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+}
+
+.white-background{
+    background-color: white;
+    padding-top: 64px;
+    margin-top: 32px;
+}
+
+.article-body-text{
+  font-family: PTSerif-Caption;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  color: #2d2d2d;
+  margin-bottom: 0px;
+}
+
+.dropcap:first-letter{
+    color: #e26463;
+  float: left;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: 0.1px;
+  padding-top: 4px;
+  padding-right: 28px;
+  padding-left: 28px;
+}
+
+.article-content .phrase-1{
+    line-height: 1.5;
+    margin-top: 40px;
+    letter-spacing: -0.1px;
+    color: #777777 !important;
+}
+.article-content .phrase-1:after{
+    content: '';
+}
+
+.article-content hr{
+    margin-top: 40px;
+}
+
+.article-content h4{
+  margin-top: 60px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  color: #2d2d2d;
+  margin-bottom: 24px;
+}
+
+.article-image-mega, .athlete-image{
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+    margin-top: 48px;
+}
+
+#athlete-pic{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549537048/img-7-min.jpg);
+}
+
+#athlete-image-3{
+    margin-top: 60px;
+    content:url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549540522/img-1-min.jpg); 
+}
+
+#athlete-image-4{
+    margin-top: 60px;
+    content:url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549540575/ab-image-5-min.jpg); 
+}
+
+#athlete-pic-2{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549540525/ab-image-1-min.jpg);
+}
+
+.article-author{
+    display: inline-block;
+}
+
+.article-author p{
+    font-family: canada-type-gibson, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    color: #777777;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.article-author a h4{
+    margin-top: 2px;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.share-this-story{
+    display: inline-block;
+    float: right;
+}
+
+.share-this-story p{
+    font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 0px;
+}
+
+.share-this-story .subsection-header{
+    display: inline-block;
+    margin-top: 28px;
+    padding-top: 2px;
+}
+
+.share-via{
+    list-style: none;
+    display: inline-block;
+    float: right;
+    margin-top: 28px;
+    vertical-align: middle;
+}
+
+.share-via li{
+    display: inline-block;
+    padding-left:30px;
+    padding-right: 30px; 
+    cursor: pointer;
+}
+
+.via-facebook{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549607904/facebook.svg);
+}
+
+.via-twitter{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549607904/twitter.svg);
+}
+
+.via-link{
+    padding-bottom: 2px;
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549607904/copy-to-clipboard.svg);
+}
+
+.share-article-bottom-line{
+    margin-top: 24px !important;
+}
+
+@media(max-width:1279px){
+    .share-this-story{
+        float: left;
+    }
+
+    .share-via{
+        float: left;
+        margin-bottom: 0px;
+    }
+
+    .share-this-story .subsection-header{
+        float: left;
+        
+    }
+
+    .tags{
+        margin-top: 0px;
+    }
+
+    .tagged-in{
+        padding-left: 4px;
+    }
+}
+
+@media(max-width:767px){
+    .share-via{
+        padding-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+
+    .share-icon{
+        padding-left: 48px !important;
+        padding-right: 0px !important;
+    }
+
+    .share-this-story .subsection-header{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:479px){
+
+    .article-author{
+        width: 100%;
+        align-content:center; 
+    }
+
+    .article-author p, .article-author a h4{
+        width: 100%;
+        text-align: center;
+    }
+
+    .article-author a h4{
+        margin-top: 4px;
+    }
+
+    .share-via{
+        transform: translateX(50%);
+        position: relative;
+    }
+
+    .share-icon{
+        padding-left: 8px !important;
+        padding-right: 24px !important; 
+    }
+
+    .share-this-story{
+        width: 100%;
+    }
+
+    .share-this-story .subsection-header{
+        margin-top: 48px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tagged-in{
+        margin-bottom: 0px;
+    }
+
+    .tags{
+        margin-bottom: 0px;
+    }
+
+    .article-tag{
+        margin-top: 24px;
+    }
+
+    .previous{
+        display: none !important;
+    }
+
+    .next{
+        transform: translateX(50%);
+        float: none !important;
+    }
+}
+
+.tagged-in{
+  font-family: canada-type-gibson, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  color: #777777;
+  margin-top: 48px;
+  padding-top: 8px;
+  display: inline-block;
+}
+
+.tags{
+    display: inline-block;
+    list-style: none;
+    padding-left: 16px;
+}
+
+.tags li{
+    display: inline-block;
+    padding: 13px 16px;
+    background-color: rgba(238, 228, 119, 0.56);
+    margin-right: 24px;
+}
+
+.tags li a{
+  font-family: canada-type-gibson, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 1.6px;
+  text-align: center;
+}
+
+@media(max-width:1024px){
+    .tags{
+        padding-left: 0px;
+    }
+}
+
+.next-article{
+    position: relative;
+    margin-top: 48px;
+    background-color: #fafafa;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.previous, .next
+{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.next{
+    float: right;
+    text-align: right;
+}
+
+.previous h5, .next h5{
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.previous h4, .next h4{
+    margin-top: 20px;
+    display: inline-block;
+    font-weight:normal;
+    color: #2d2d2d;
+    margin-bottom: 0px; 
+}
+
+.prev-article-link, .next-article-link{
+    display: inline-block;
+}
+
+.prev-article-icon{
+    padding-right: 36px;
+    display: block;
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549610660/previous.png);
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+.next-article-icon{
+    padding-left: 36px;
+    display: block;
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549610660/next.png);
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+
+.footer{
+    position: relative;bottom:0px;
+}
+
+.progress-container{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+}
+
+.progress-bar {
+    height: 3px;
+    background: #e26463;;
+    width: 0%;
+    
+  }
+
+
+/* ABOUT US PAGE CSS */
+.about-us-cover-section{
+    padding-top: 108px;
+    padding-bottom: 96px;
+    background-color: #f9f9f9;
+}
+.about-us-image{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1549626216/about-us-illustration.svg);
+    margin: 0 auto;
+    float: right;
+}
+
+@media(max-width:768px){
+    .about-us-image{
+        max-width: 70%;
+        margin-top: 64px;
+        float: none;
+    }
+}
+
+.mark-twain-quote{
+    position: relative;
+    margin-top: 56px;
+}
+
+.move-up{
+    position: absolute;
+    transform: translateY(-150px);
+    left: 0;
+    right: 0;
+}
+
+
+
+.mark-twain-quote .phrase-1{
+    font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #2d2d2d;
+  margin-bottom: 32px;
+  margin-top: 20px;
+  max-width: 96%;
+
+  
+}
+
+.mark-twain-quote .phrase-1:after{
+    content: url();
+    display: inline-block;
+}
+
+.mark-twain-quote .phrase-1:first-letter{
+color: #e26463;
+  float: left;
+  font-size: 96px;
+  line-height: 0.8;
+  letter-spacing: 0.1px;
+  padding-top: 4px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.mark-twain-quote .white-background{
+    box-shadow: 0 -2px 24px 0 rgba(224, 224, 224, 0.5);
+}
+
+@media (max-width:768px){
+    .mark-twain-quote .white-background{
+        box-shadow: none;
+        width: 100vw;
+    }
+
+    .move-up{
+        transform: translateY(0px);
+    }
+
+    .about-us-cover-section{
+        padding-bottom: 64px;
+    }
+    
+}
+
+.mark-twain-quote h5{
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 4.8px;
+  text-align: center;
+  color: #777777;
+  font-size: 0.875rem;
+  margin-top: 0px !important;
+  display: inline-block;
+  margin-top: 32px;
+  text-align: left;
+}
+
+.white-overlay-div{
+    background-color: white;
+    z-index: 2;
+}
+
+.white-overlay-div hr{
+    margin-top: 64px;
+} 
+
+.about-us-copy{
+  font-family: PTSerif-Caption;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  color: #2d2d2d;
+  margin-top: 40px;
+  max-width:87% ;
+}
+
+.about-us-content{
+    margin-top: 40px;
+}
+
+.about-us-live{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1551689842/3-col-tile.jpg);
+}
+
+.about-us-give{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1551691064/give-tile.jpg);
+}
+
+.about-us-sustain{
+    content: url(https://res.cloudinary.com/dvq2wjj33/image/upload/v1551691273/sustain-tile-copy.jpg);
+}
+
+.about-us-live:before {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+    opacity: .6; 
+    z-index: 10;
+  }
+.about-us-pillar{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.hide-overflow{
+    overflow: hidden;
+}
+
+.bottom-left{
+  position: absolute;
+  bottom: 32px;
+  left: 48px;
+  color: white;
+}
+
+@media(max-width:840px){
+    .bottom-left{
+        position: absolute;
+        bottom: 28px;
+        left: 32px;
+        color: white;
+    }
+      
+}
+
+@media(max-width:768px){
+    .bottom-left{
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        color: white;
+    }     
+}
+
+.pillar-text-about-us{
+    font-family: PTSerif-Caption;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    margin-bottom: 0px;
+  }
+
+  .wellbeing-of{
+    font-family: canada-type-gibson, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 4px;
+  }
+
+  .about-us-pillars-large-screen{
+      margin-top: 48px;
+  }
+
+  .pillar-container{
+      position: relative;
+  }
+
+  @media(max-width:767px){
+    .about-us-pillars-large-screen{
+        max-width: 44%;
+        margin-top: 12px;
+        margin-right: 12px;
+        display: inline-block;
+    }
+  }
+
+  .join-us{
+      margin-top: 64px;
+      padding-bottom: 64px;
+  }
+
+  .join-us p{
+    width: 80%;
+  }
+
+  .article-content .phrase-1{
+    cursor: auto !important;
+  }
+
+  /* ARTICLE PAGE CONTEXTUAL NAVBAR CSS */
+
+  .article-contextual-navbar{
+    background: white !important;
+    border-bottom: 1px solid rgb(237, 237, 237) !important;
+    opacity: 1 !important;
+    position: fixed !important;
+    top: -200px !important;
+    z-index: 4;
+    -webkit-transition: 0.4s !important;
+    -o-transition: 0.4s !important;
+    transition: 0.4s !important;
+  }
+
+  .rg-logo-condensed{
+      content: url('https://res.cloudinary.com/dvq2wjj33/image/upload/v1551268824/rg-logo-short.svg');
+      padding: 32px;
+      padding-left: 0px;
+      display: inline-block;
+      float: left;
+  }
+
+  .navbar-article-name{
+    font-family: PTSerif-Caption;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+    color: #2d2d2d;
+    display: inline-block;
+    margin: 0px;
+    padding: 32px;
+    padding-left: 0px;
+  }
+
+  .navbar-article-name:before{
+    border-left: 2px solid;  
+    content: url();
+    padding-right: 32px;
+    color: rgb(237, 237, 237) !important;
+  }
+
+  .article-contextual-navbar .share-this-story .subsection-header{
+      margin: 0px;
+      padding: 38px;
+  }
+
+  .article-contextual-navbar .share-via{
+    margin: 0px;
+    padding: 38px;
+    padding-right: 0px;
+}
+
+@media(max-width:480px){
+    .rg-logo-condensed{
+        padding: 24px;
+        padding-right: 16px;
+        padding-left: 0px;
+    }
+
+    .navbar-article-name:before{
+        padding-right: 16px;
+    }
+
+    .navbar-article-name{
+        padding: 24px;
+        padding-left: 0px;
+        font-size: 1.125rem;
+    }
+}
+.navbar-hidden{
+    top: -100px !important;
+  }
+  
+  .navbar-visible{
+    top: 0px !important;
+  }
+
+
+
+
+
+
+
+
+
+  .about-us-page-navbar{
+      background: white !important;
+  }
